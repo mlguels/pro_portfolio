@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 
+import { Email } from "@/components";
+
 const poppings = Poppins({
   subsets: ["latin"],
   display: "auto",
@@ -24,11 +26,11 @@ const Hero = () => {
         pb-[150px]
         "
     >
-      <section className="p-8">
-        <ul className="flex flex-col gap-8">
-          <li>
+      <section className="p-4">
+        <ul className="flex flex-col gap-2">
+          <li className="m-5">
             <h3
-              className={`${poppings.variable} text-primary-dark font-pop text-2xl`}
+              className={`${poppings.variable} text-primary-dark font-pop text-2xl font-bold`}
             >
               HI, I AM MIGUEL
             </h3>
@@ -36,12 +38,12 @@ const Hero = () => {
           <li>
             <Image
               src="/professionalwebdev.png"
-              width={650}
+              width={625}
               height={20}
               alt="Pro Web Dev"
             />
           </li>
-          <li>
+          <li className="m-4">
             <p className="text-[#6F74A7] font-pop text-xl">
               Transforming the web one line of code at a time: <br />
               Crafting cutting-edge digital experiences with precision, <br />
@@ -49,11 +51,15 @@ const Hero = () => {
             </p>
           </li>
         </ul>
-        <ul className="flex items-center gap-6">
-          <button className="bg-primary-dark text-[#FFFF] rounded-2xl py-4 px-6">
-            My Work
-          </button>
-          <p>mrodandres@icloud.com</p>
+        <ul className="flex items-center gap-20 pt-1 m-5">
+          <li>
+            <button className="bg-primary-dark text-[#FFFF] rounded-3xl py-5 px-12">
+              My Work
+            </button>
+          </li>
+          <li>
+            <Email />
+          </li>
         </ul>
       </section>
       {/*Right side */}
