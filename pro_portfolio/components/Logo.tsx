@@ -9,10 +9,11 @@ const Logo = () => {
   return (
     <Image
       alt="Logo"
-      className="hidden md:block cursor-pointer"
+      className="md:block cursor-pointer"
       height={50}
       width={50}
       src="/Logo.svg"
+      priority
     />
   );
 };

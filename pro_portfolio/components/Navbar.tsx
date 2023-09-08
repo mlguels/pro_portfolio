@@ -1,17 +1,18 @@
 import Image from "next/image";
 import { Container, Logo } from "@/components";
+import Link from "next/link";
 
 const Nav = () => {
   return (
-    <main className="fixed w-full z-10 bg-[#F3F8FF] shadow-sm">
+    <main className="w-full z-10 bg-[#F3F8FF] shadow-sm">
       <div className="py-4">
         <Container>
-          <ul className="flex items-center justify-between">
-            <li>
-              <Logo />
-            </li>
-            <ul className="flex gap-4">
-              <li className="text-primary-dark">Home</li>
+          <div className="flex items-center justify-between">
+            <Logo />
+            <ul className="hidden md:flex gap-4">
+              <Link href="/">
+                <li className="text-primary-dark">Home</li>
+              </Link>
               <li className="text-white-light">Case Studies</li>
               <li className="text-white-light">Contact</li>
               <li className="flex gap-2 text-black-200 font-200">
@@ -34,7 +35,7 @@ const Nav = () => {
                 />
               </li>
             </ul>
-          </ul>
+          </div>
         </Container>
       </div>
     </main>

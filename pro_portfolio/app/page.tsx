@@ -1,5 +1,11 @@
-import { Hero, MySkills } from "@/components";
+import { Hero, Container } from "@/components";
 
 export default function Home() {
-  return <main>{/* <Hero /> */}</main>;
+  return (
+    <main>
+      <Container>
+        <Hero />
+      </Container>
+    </main>
+  );
 }
