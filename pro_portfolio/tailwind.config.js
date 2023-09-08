@@ -9,11 +9,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pop: ["var(--font-poppings)"],
+      },
+    },
     colors: {
       "primary-dark": "#0252CD",
       "primary-light": "#428DFF",
       "white-light": "#6F74A7",
+      "main-bg": "#F3F8FF",
     },
   },
   plugins: [],
