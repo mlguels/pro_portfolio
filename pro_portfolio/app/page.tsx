@@ -1,11 +1,9 @@
-import { Hero, Container } from "@/components";
+import { Hero } from "@/components";
 
 export default function Home() {
   return (
     <main>
-      <Container>
-        <Hero />
-      </Container>
+      <Hero />
     </main>
   );
 }
