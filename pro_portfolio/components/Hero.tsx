@@ -58,7 +58,7 @@ const Hero = () => {
               </p>
             </li>
           </ul>
-          <ul className="flex items-center gap-20 pt-1 m-5">
+          <ul className="flex flex-col md:flex-row md:gap-20 pt-1 m-5">
             <li>
               <MyWorkButton />
             </li>
