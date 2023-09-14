@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 
-import { Email, Container } from "@/components";
+import { Email, Container, MyWorkButton } from "@/components";
 
 const poppings = Poppins({
   subsets: ["latin"],
@@ -30,27 +30,28 @@ const Hero = () => {
         pt-10
         pl-10
         pr-10 
+        w-auto
         "
       >
-        <section className="">
+        <section>
           <ul className="flex flex-col gap-2">
             <li className="m-5">
               <h3
-                className={`${poppings.variable} text-primary-dark font-pop text-2xl font-bold`}
+                className={`${poppings.variable} text-primary-dark font-pop text-2xl font-semibold tracking-widest`}
               >
                 HI, I AM MIGUEL
               </h3>
             </li>
             <li>
               <Image
-                src="/professionalwebdev.png"
+                src="/pwd2.png"
                 width={625}
                 height={20}
                 alt="Pro Web Dev"
               />
             </li>
             <li className="m-4">
-              <p className="text-[#6F74A7] font-pop text-xl">
+              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl">
                 Transforming the web one line of code at a time: <br />
                 Crafting cutting-edge digital experiences with precision, <br />
                 passion, and a profound commintment to excellence
@@ -59,9 +60,7 @@ const Hero = () => {
           </ul>
           <ul className="flex items-center gap-20 pt-1 m-5">
             <li>
-              <button className="bg-primary-dark text-[#FFFF] rounded-3xl py-5 px-12">
-                My Work
-              </button>
+              <MyWorkButton />
             </li>
             <li>
               <Email />
@@ -70,13 +69,7 @@ const Hero = () => {
         </section>
         {/*Right side */}
         <section>
-          <Image
-            className="w-825 h-auto"
-            src="/computer.png"
-            width={825}
-            height={100}
-            alt="Comp Logo"
-          />
+          <Image src="/computer.png" width={825} height={100} alt="Comp Logo" />
         </section>
       </div>
     </main>
