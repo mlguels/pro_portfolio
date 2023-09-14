@@ -15,7 +15,6 @@ const Hero = () => {
     <main
       id="/"
       className="
-        m-auto
         md:h-screen
         bg-main-bg
         "
