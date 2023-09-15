@@ -50,7 +50,7 @@ const Hero = () => {
               />
             </li>
             <li className="m-4">
-              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl">
+              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit">
                 Transforming the web one line of code at a time: <br />
                 Crafting cutting-edge digital experiences with precision, <br />
                 passion, and a profound commintment to excellence
