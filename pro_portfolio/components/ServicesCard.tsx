@@ -29,9 +29,10 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
       justify-between 
       bg-main-bg 
       p-4 
-      shadow-lg 
       ring 
       ring-main-bg 
+      shadow-md
+      shadow-primary-dark 
       hover:shadow-2xl
       hover:shadow-primary-dark
       hover:ring-primary-dark
