@@ -3,14 +3,14 @@ import { ServicesCard } from ".";
 
 const Services = () => {
   return (
-    <main className="bg-main-bg h-screen">
+    <main className="bg-main-bg md:h-[500px] p-4 pb-10">
       <section className="flex flex-col pt-10 items-center gap-8">
         <Image src="/services.svg" width={600} height={100} alt="Services" />
-        <ul>
+        <ul className="flex flex-col md:flex-row gap-12 md:gap-16">
           <li>
             <ServicesCard
               logoInfo={{
-                url: "/ICON.svg",
+                url: "/serviceIcon1.svg",
                 width: 100,
                 height: 100,
                 alt: "Icon",
@@ -22,38 +22,39 @@ const Services = () => {
           <li>
             <ServicesCard
               logoInfo={{
-                url: "/ICON.svg",
-                width: 100,
-                height: 100,
+                url: "/serviceIcon2.svg",
+                width: 80,
+                height: 50,
                 alt: "Icon",
               }}
-              title="Analytics & SEO"
-              desc="Implement tracking & analytics tools to monitor website performance & improve SEO."
+              title="Front-End Dev"
+              desc="Front-end dev includes creating the user interface and interactive elements of websites and apps."
             />
           </li>
           <li>
             <ServicesCard
               logoInfo={{
-                url: "/ICON.svg",
+                url: "/serviceIcon3.svg",
                 width: 100,
                 height: 100,
                 alt: "Icon",
               }}
-              title="Analytics & SEO"
-              desc="Implement tracking & analytics tools to monitor website performance & improve SEO."
+              title="Back-End Dev"
+              desc="
+              Back-end involves building server-side logic, databases, and app functionality that power websites and apps."
             />
           </li>
           <li>
             {" "}
             <ServicesCard
               logoInfo={{
-                url: "/ICON.svg",
+                url: "/serviceIcon4.svg",
                 width: 100,
                 height: 100,
                 alt: "Icon",
               }}
-              title="Analytics & SEO"
-              desc="Implement tracking & analytics tools to monitor website performance & improve SEO."
+              title="Web Optimization"
+              desc="Web optimization focuses on improving website performance for a smoother user experience"
             />
           </li>
         </ul>
