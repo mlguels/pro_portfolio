@@ -4,9 +4,9 @@ import { WorkExpCard } from ".";
 
 const WorkExp = () => {
   return (
-    <main className="bg-[#FFFF] pt-12">
+    <main className="bg-[#FFFF] pt-12 pb-12">
       <section className="flex flex-col md:flex-row items-center justify-center gap-28">
-        <div className="bg-main-black w-[700px] h-[610px] flex rounded-xl justify-center">
+        <div className="bg-main-black w-[345px] h-[340px] md:w-[700px] md:h-[610px] p-10 flex rounded-xl justify-center">
           <Image
             src="/DESCRIPTION.svg"
             width={400}
