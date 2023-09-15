@@ -19,6 +19,7 @@ module.exports = {
       "primary-light": "#428DFF",
       "white-light": "#6F74A7",
       "main-bg": "#F3F8FF",
+      "main-black": "#151E2C",
     },
   },
   plugins: [],
