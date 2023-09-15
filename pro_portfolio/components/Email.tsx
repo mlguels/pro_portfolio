@@ -22,7 +22,7 @@ const Email: React.FC = () => {
   };
 
   return (
-    <p className="text-[#6F74A7] flex justify-between items-center gap-3 text-lg font-bold py-4 px-5 rounded-2xl bg-[#FFFF]">
+    <p className="text-[#6F74A7] flex justify-between items-center gap-3 text-lg font-bold py-4 px-5 rounded-2xl bg-[#FFFF] hover:scale-105">
       <input
         ref={emailRef}
         type="text"
