@@ -1,4 +1,10 @@
-import { Hero, MySkills, Services, WorkExp } from "@/components";
+import {
+  Hero,
+  MySkills,
+  Services,
+  WorkExp,
+  FeaturedProjects,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +13,7 @@ export default function Home() {
       <MySkills />
       <Services />
       <WorkExp />
+      <FeaturedProjects />
     </main>
   );
 }

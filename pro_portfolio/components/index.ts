@@ -9,3 +9,4 @@ export { default as Services } from "./Services";
 export { default as ServicesCard } from "./ServicesCard";
 export { default as WorkExp } from "./WorkExp";
 export { default as WorkExpCard } from "./WorkExpCard";
+export { default as FeaturedProjects } from "./FeaturedProjects";

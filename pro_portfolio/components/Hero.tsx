@@ -47,6 +47,7 @@ const Hero = () => {
                 width={625}
                 height={20}
                 alt="Pro Web Dev"
+                priority
               />
             </li>
             <li className="m-4">
