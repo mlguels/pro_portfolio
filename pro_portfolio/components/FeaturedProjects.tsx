@@ -15,7 +15,7 @@ const FeaturedProjects = () => {
             alt="Featured Projects"
           />
         </li>
-        <li>
+        <li className="p-5">
           <FeaturedProjectv1
             background="bg-morent"
             projectTitle={
@@ -43,7 +43,7 @@ const FeaturedProjects = () => {
             seeDetailButton={<DetailProjectButton />}
           />
         </li>
-        <li>
+        <li className="p-5">
           <FeaturedProjectv1
             background="bg-hipnode"
             projectTitle={
