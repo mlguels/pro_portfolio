@@ -3,7 +3,7 @@ import { Testimonial } from ".";
 
 const About = () => {
   return (
-    <main className="h-screen bg-main-bg pt-20">
+    <main className="h-full bg-main-bg pt-20 pb-12">
       <ul className="flex flex-col items-center">
         <li>
           <Image

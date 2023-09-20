@@ -30,14 +30,14 @@ const Testimonial: React.FC<TestimonialProps> = ({
           height={image.height}
           alt={image.alt}
         />
-        <ul className="flex flex-col gap-8">
+        <ul className="flex flex-col gap-8 pt-5">
           <li>
             <Image src="/Stars.svg" width={100} height={10} alt="Stars" />
           </li>
           <li>
             <p className="text-white-light text-xl max-w-xl">{testimony}</p>
           </li>
-          <li className="flex flex-col gap-">
+          <li className="flex flex-col gap-1">
             <h4 className="text-[#192333] font-semibold">- {name}</h4>
             <p className="text-white-light">{info}</p>
           </li>
