@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-import { FeaturedProjectv1, Technologies, DetailProjectButton } from ".";
+import {
+  FeaturedProjectv1,
+  Technologies,
+  DetailProjectButton,
+  ButtonLink,
+} from ".";
 
 const FeaturedProjects = () => {
   return (
@@ -72,12 +77,7 @@ const FeaturedProjects = () => {
           />
         </li>
         <li>
-          <button className="bg-primary-dark text-[#FFFF] flex items-center gap-3 py-4 px-6 rounded-3xl">
-            See more case studies
-            <span className="pt-1">
-              <Image src="/arrow.svg" width={13} height={10} alt="Arrow" />
-            </span>
-          </button>
+          <ButtonLink text="See more case studies" />
         </li>
       </ul>
     </main>
