@@ -8,6 +8,10 @@ export const skillsData = [
     iconPath: "/js.svg",
   },
   {
+    name: "NextJs",
+    iconPath: "/next.svg",
+  },
+  {
     name: "Typescript",
     iconPath: "/ts.svg",
   },

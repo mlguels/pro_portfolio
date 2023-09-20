@@ -4,7 +4,7 @@ import { FeaturedProjectv1, Technologies, DetailProjectButton } from ".";
 
 const FeaturedProjects = () => {
   return (
-    <main className="h-screen flex justify-center pt-20">
+    <main className="h-auto flex justify-center pt-20">
       <ul className="flex flex-col gap-10 items-center">
         <li>
           <Image
@@ -70,6 +70,14 @@ const FeaturedProjects = () => {
             }}
             seeDetailButton={<DetailProjectButton />}
           />
+        </li>
+        <li>
+          <button className="bg-primary-dark text-[#FFFF] flex items-center gap-3 py-4 px-6 rounded-3xl">
+            See more case studies
+            <span className="pt-1">
+              <Image src="/arrow.svg" width={13} height={10} alt="Arrow" />
+            </span>
+          </button>
         </li>
       </ul>
     </main>

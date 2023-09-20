@@ -8,7 +8,9 @@ const Nav = () => {
       <div className="py-4">
         <Container>
           <div className="flex items-center justify-between">
-            <Logo />
+            <div className="pl-16">
+              <Logo />
+            </div>
             <ul className="hidden md:flex gap-4">
               <Link href="/">
                 <li className="text-primary-dark">Home</li>
