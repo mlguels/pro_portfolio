@@ -6,7 +6,7 @@ interface ButtonLinkProps {
 
 const ButtonLink: React.FC<ButtonLinkProps> = ({ text }) => {
   return (
-    <button className="bg-primary-dark text-[#FFFF] flex items-center gap-3 py-4 px-6 rounded-3xl">
+    <button className="bg-primary-dark text-[#FFFF] flex items-center gap-3 py-4 px-36 md:px-8 rounded-3xl">
       {text}
       <span className="pt-1">
         <Image src="/arrow.svg" width={13} height={10} alt="Arrow" />
