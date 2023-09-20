@@ -17,3 +17,4 @@ export { default as DetailProjectButton } from "./DetailProjectButton";
 export { default as About } from "./About";
 export { default as Testimonial } from "./Testimonial";
 export { default as ButtonLink } from "./ButtonLink";
+export { default as GetInTouch } from "./GetInTouch";
