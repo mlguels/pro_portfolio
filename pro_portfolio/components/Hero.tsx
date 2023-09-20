@@ -34,7 +34,7 @@ const Hero = () => {
       >
         <section>
           <ul className="flex flex-col gap-2">
-            <li className="m-5">
+            <li className="m-5 pl-4">
               <h3
                 className={`${poppings.variable} text-primary-dark font-pop text-2xl font-semibold tracking-widest`}
               >
@@ -50,15 +50,15 @@ const Hero = () => {
                 priority
               />
             </li>
-            <li className="m-4">
-              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit">
+            <li className="m-4 pl-2">
+              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit whitespace-nowrap">
                 Transforming the web one line of code at a time: <br />
                 Crafting cutting-edge digital experiences with precision, <br />
                 passion, and a profound commintment to excellence
               </p>
             </li>
           </ul>
-          <ul className="flex flex-col md:flex-row md:gap-20 pt-1 m-5">
+          <ul className="flex flex-col justify-between md:flex-row md:gap-[40px] pt-1 m-5">
             <li>
               <MyWorkButton />
             </li>
