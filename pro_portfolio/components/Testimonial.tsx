@@ -21,25 +21,25 @@ const Testimonial: React.FC<TestimonialProps> = ({
   info,
 }) => {
   return (
-    <main>
-      <section>
+    <main className="p-5">
+      <section className="flex flex-col md:flex-row gap-10 pt-20">
         <Image
-          className="w-[300px] h-auto"
+          className="w-auto h-auto md:w-[328px] md:h-[328px]"
           src={image.url}
           width={image.width}
           height={image.height}
           alt={image.alt}
         />
-        <ul>
-          <li>Stars</li>
+        <ul className="flex flex-col gap-8">
           <li>
-            <p>{testimony}</p>
+            <Image src="/Stars.svg" width={100} height={10} alt="Stars" />
           </li>
           <li>
-            <h4>{name}</h4>
+            <p className="text-white-light text-xl max-w-xl">{testimony}</p>
           </li>
-          <li>
-            <p>{info}</p>
+          <li className="flex flex-col gap-">
+            <h4 className="text-[#192333] font-semibold">- {name}</h4>
+            <p className="text-white-light">{info}</p>
           </li>
         </ul>
       </section>

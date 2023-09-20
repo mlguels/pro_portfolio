@@ -3,8 +3,8 @@ import { Testimonial } from ".";
 
 const About = () => {
   return (
-    <main className="h-screen flex justify-center bg-main-bg pt-20">
-      <ul>
+    <main className="h-screen bg-main-bg pt-20">
+      <ul className="flex flex-col items-center">
         <li>
           <Image
             className="w-[575px] h-auto"
@@ -19,7 +19,7 @@ const About = () => {
             image={{
               url: "/Adrian.svg",
               width: 200,
-              height: 100,
+              height: 200,
               alt: "Adrian",
             }}
             testimony="I have had the pleasure of working with Adrian as a Software Developer 
