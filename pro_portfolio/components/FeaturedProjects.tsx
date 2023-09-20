@@ -4,7 +4,7 @@ import { FeaturedProjectv1, Technologies, DetailProjectButton } from ".";
 
 const FeaturedProjects = () => {
   return (
-    <main className="h-auto flex justify-center pt-20">
+    <main className="h-auto flex justify-center pt-20 pb-5">
       <ul className="flex flex-col gap-10 items-center">
         <li>
           <Image

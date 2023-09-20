@@ -14,3 +14,5 @@ export { default as FeaturedProjectv1 } from "./FeaturedProjectv1";
 export { default as FeaturedProjectsv2 } from "./FeaturedProjectv2";
 export { default as Technologies } from "./Technologies";
 export { default as DetailProjectButton } from "./DetailProjectButton";
+export { default as About } from "./About";
+export { default as Testimonial } from "./Testimonial";
