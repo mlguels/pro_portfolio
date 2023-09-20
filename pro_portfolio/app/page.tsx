@@ -4,6 +4,7 @@ import {
   Services,
   WorkExp,
   FeaturedProjects,
+  About,
 } from "@/components";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <WorkExp />
       <FeaturedProjects />
+      <About />
     </main>
   );
 }
