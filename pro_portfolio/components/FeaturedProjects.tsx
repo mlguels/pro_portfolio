@@ -17,6 +17,7 @@ const FeaturedProjects = () => {
         </li>
         <li>
           <FeaturedProjectv1
+            background="bg-morent"
             projectTitle={
               <span>
                 Morrent - A Car <br />
@@ -38,6 +39,34 @@ const FeaturedProjects = () => {
               width: 100,
               height: 50,
               alt: "Morent Logo",
+            }}
+            seeDetailButton={<DetailProjectButton />}
+          />
+        </li>
+        <li>
+          <FeaturedProjectv1
+            background="bg-hipnode"
+            projectTitle={
+              <span className="whitespace-nowrap">
+                Hipnode - A Social <br />
+                <span className="whitespace-nowrap">Media Application</span>
+              </span>
+            }
+            technologies={[
+              <Technologies tech1="ReactJS" tech2="Vite" />,
+              <Technologies tech1="Express.js" tech2="MySQL" />,
+            ]}
+            desktopView={{
+              url: "/hipnodeLaptop.svg",
+              width: 100,
+              height: 50,
+              alt: "Hipnode Logo",
+            }}
+            mobileView={{
+              url: "/hipnodeMobile.svg",
+              width: 100,
+              height: 50,
+              alt: "Hipnode Logo",
             }}
             seeDetailButton={<DetailProjectButton />}
           />

@@ -19,6 +19,7 @@ interface FeaturedProjectv1Props {
   desktopView: desktopImage;
   mobileView: mobileImage;
   seeDetailButton: React.ReactNode;
+  background: string;
 }
 
 const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
@@ -27,9 +28,12 @@ const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
   desktopView,
   mobileView,
   seeDetailButton,
+  background,
 }) => {
   return (
-    <main className="bg-[#416CEA] w-auto h-auto lg:w-[1200px] lg:h-[444px] rounded-2xl">
+    <main
+      className={`${background} w-auto h-auto lg:w-[1200px] lg:h-[444px] rounded-2xl`}
+    >
       <section className="flex flex-col md:flex-row items-center p-10">
         <section>
           <ul className="flex flex-col p-8 gap-8">

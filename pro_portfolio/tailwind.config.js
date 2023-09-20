@@ -20,6 +20,8 @@ module.exports = {
       "white-light": "#6F74A7",
       "main-bg": "#F3F8FF",
       "main-black": "#151E2C",
+      morent: "#416CEA",
+      hipnode: "#FF6934",
     },
   },
   plugins: [],
