@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <main className="w-full z-10 bg-[#F3F8FF] shadow-sm">
+    <main className="w-full z-10 bg-[#F3F8FF] sticky top-0">
       <div className="py-4">
         <Container>
           <div className="flex items-center justify-between">
