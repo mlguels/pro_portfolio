@@ -18,6 +18,7 @@ interface FeaturedProjectv1Props {
   technologies: React.ReactNode[];
   desktopView: desktopImage;
   mobileView: mobileImage;
+  seeDetailButton: React.ReactNode;
 }
 
 const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
@@ -25,6 +26,7 @@ const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
   technologies,
   desktopView,
   mobileView,
+  seeDetailButton,
 }) => {
   return (
     <main className="bg-[#416CEA] w-auto h-auto lg:w-[1200px] lg:h-[444px] rounded-2xl">
@@ -37,9 +39,7 @@ const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
                 <div key={index}>{tech}</div>
               ))}
             </li>
-            <li>
-              <button>See Detail Project</button>
-            </li>
+            <li>{seeDetailButton}</li>
           </ul>
         </section>
         <section className="">

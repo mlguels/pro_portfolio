@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { FeaturedProjectv1, Technologies } from ".";
+import { FeaturedProjectv1, Technologies, DetailProjectButton } from ".";
 
 const FeaturedProjects = () => {
   return (
@@ -39,6 +39,7 @@ const FeaturedProjects = () => {
               height: 50,
               alt: "Morent Logo",
             }}
+            seeDetailButton={<DetailProjectButton />}
           />
         </li>
       </ul>
