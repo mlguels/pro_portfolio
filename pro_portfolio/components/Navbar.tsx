@@ -16,7 +16,9 @@ const Nav = () => {
               <Link href="/casestudies">
                 <li className="text-white-light">Case Studies</li>
               </Link>
-              <li className="text-white-light">Contact</li>
+              <Link href="/contact">
+                <li className="text-white-light">Contact</li>
+              </Link>
               <li className="flex gap-2 text-black-200 font-200">
                 <Image
                   src="/Vector.svg"
