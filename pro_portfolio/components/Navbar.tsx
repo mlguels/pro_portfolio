@@ -13,7 +13,9 @@ const Nav = () => {
               <Link href="/">
                 <li className="text-primary-dark">Home</li>
               </Link>
-              <li className="text-white-light">Case Studies</li>
+              <Link href="/casestudies">
+                <li className="text-white-light">Case Studies</li>
+              </Link>
               <li className="text-white-light">Contact</li>
               <li className="flex gap-2 text-black-200 font-200">
                 <Image
