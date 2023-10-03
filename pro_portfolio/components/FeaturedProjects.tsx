@@ -7,6 +7,7 @@ import {
   DetailProjectButton,
   ButtonLink,
 } from ".";
+import Link from "next/link";
 
 const FeaturedProjects = () => {
   return (
@@ -83,7 +84,9 @@ const FeaturedProjects = () => {
           />
         </li>
         <li>
-          <ButtonLink text="See more case studies" />
+          <Link href="/casestudies">
+            <ButtonLink text="See more case studies" />
+          </Link>
         </li>
       </ul>
     </main>
