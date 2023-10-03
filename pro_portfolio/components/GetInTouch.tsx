@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { ButtonLink } from ".";
+import Link from "next/link";
 
 const GetInTouch = () => {
   return (
@@ -22,7 +23,9 @@ const GetInTouch = () => {
             />
           </li>
           <li className="p-5 md:p-0 md:pt-32">
-            <ButtonLink text="Get in touch with me" />
+            <Link href="/contact">
+              <ButtonLink text="Get in touch with me" />
+            </Link>
           </li>
         </ul>
       </div>
