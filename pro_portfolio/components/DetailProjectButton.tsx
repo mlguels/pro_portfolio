@@ -1,15 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const DetailProjectButton = () => {
+interface DetailProjectButtonProps {
+  href: string;
+}
+
+const DetailProjectButton: React.FC<DetailProjectButtonProps> = ({ href }) => {
   return (
-    <button>
+    <Link href={href}>
       <Image
         src="/seeDetailProject.svg"
         width={200}
         height={50}
         alt="See Detail Project"
       />
-    </button>
+    </Link>
   );
 };
 
