@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 
-import { Email, Container, MyWorkButton } from "@/components";
+import { Email, MyWorkButton, Scroll } from "@/components";
+import Link from "next/link";
 
 const poppings = Poppins({
   subsets: ["latin"],
@@ -60,7 +63,9 @@ const Hero = () => {
           </ul>
           <ul className="flex flex-col justify-between md:flex-row md:gap-[40px] pt-1 m-5">
             <li>
-              <MyWorkButton />
+              <Scroll href="#featured_projects">
+                <MyWorkButton />
+              </Scroll>
             </li>
             <li>
               <Email />
