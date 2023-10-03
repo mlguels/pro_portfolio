@@ -22,6 +22,7 @@ module.exports = {
       "main-black": "#151E2C",
       morent: "#416CEA",
       hipnode: "#FF6934",
+      input: "#CCE1FF",
     },
   },
   plugins: [],
