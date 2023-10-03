@@ -9,7 +9,10 @@ import {
 
 const FeaturedProjects = () => {
   return (
-    <main className="h-auto flex justify-center pt-20 pb-5">
+    <main
+      id="featured_projects"
+      className="h-auto flex justify-center pt-20 pb-5"
+    >
       <ul className="flex flex-col gap-10 items-center">
         <li>
           <Image
