@@ -1,14 +1,16 @@
+import { ButtonLink } from "@/components";
 import Image from "next/image";
+import { text } from "stream/consumers";
 
 const Contact = () => {
   return (
     <main>
-      <section className="bg-main-bg h-[400px] items-center pt-24 p-8">
+      <section className="bg-main-bg h-[350px] items-center pt-24 p-8">
         <ul className="flex flex-col items-center gap-6">
           <li>
             <Image
               src="/getintouch.svg"
-              width={500}
+              width={425}
               height={50}
               alt="case studes"
             />
@@ -21,7 +23,7 @@ const Contact = () => {
         </ul>
       </section>
 
-      <section>
+      <section className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col">
           <h3>My Socials</h3>
           <div className="flex gap-2">
@@ -45,21 +47,39 @@ const Contact = () => {
           </div>
         </div>
 
-        <ul>
-          <li>
-            <label htmlFor="">Subject</label>
-            <input type="text" />
+        <ul className="flex flex-col gap-8">
+          <li className="flex flex-col">
+            <label htmlFor="subject">Subject</label>
+            <input
+              type="text"
+              className="bg-input py-2 rounded-lg"
+              name="subject"
+              id="subject"
+            />
           </li>
-          <li>
-            <label htmlFor="">Message</label>
-            <input type="text" />
+          <li className="flex flex-col">
+            <label htmlFor="message">Message</label>
+            <input
+              type="text"
+              id="message"
+              name="message"
+              className="bg-input py-8 rounded-lg"
+            />
           </li>
           <li>
             <label htmlFor="">
               Best way to reach out to you?{" "}
-              <span>eg. phone number or email</span>
+              <span className="text-[#778295]">eg. phone number or email</span>
             </label>
             <input type="text" />
+          </li>
+          <li>
+            <button
+              type="submit"
+              className="bg-primary-dark text-[#FFFF] text-sm flex items-center gap-3 py-4 px-36 md:px-12 rounded-3xl"
+            >
+              Send
+            </button>
           </li>
         </ul>
       </section>
