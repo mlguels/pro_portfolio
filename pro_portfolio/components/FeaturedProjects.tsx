@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Image from "next/image";
 
 import {
@@ -48,7 +49,9 @@ const FeaturedProjects = () => {
               height: 50,
               alt: "Morent Logo",
             }}
-            seeDetailButton={<DetailProjectButton />}
+            seeDetailButton={
+              <DetailProjectButton href="/casestudies/morrent" />
+            }
           />
         </li>
         <li className="p-5">
@@ -76,7 +79,7 @@ const FeaturedProjects = () => {
               height: 50,
               alt: "Hipnode Logo",
             }}
-            seeDetailButton={<DetailProjectButton />}
+            seeDetailButton={<DetailProjectButton href="/" />}
           />
         </li>
         <li>
