@@ -13,24 +13,22 @@ const WorkExp = () => {
             height={100}
             alt="Work Exp"
           />
-          <div className="pt-5">
-            <input type="range" />
-          </div>
+          <div className="pt-5">{/* <input type="range" /> */}</div>
         </div>
         <ul className="flex flex-col gap-8">
           <li>
             <WorkExpCard
               imageLogo={{
-                url: "/slack.svg",
+                url: "/jsmlogl.webp",
                 width: 50,
                 height: 50,
                 alt: "Work Logo",
               }}
-              title="Slack"
-              desc="Product Design - 4 years experience"
+              title="JSM Pro Master Class"
+              desc="Full-Stack Developer - 6 months +"
             />
           </li>
-          <li>
+          <li className="opacity-60">
             <WorkExpCard
               imageLogo={{
                 url: "/slack.svg",
@@ -38,11 +36,11 @@ const WorkExp = () => {
                 height: 50,
                 alt: "Work Logo",
               }}
-              title="Slack"
-              desc="Product Design - 4 years experience"
+              title="..."
+              desc="..."
             />
           </li>
-          <li>
+          <li className="opacity-60">
             <WorkExpCard
               imageLogo={{
                 url: "/slack.svg",
@@ -50,11 +48,11 @@ const WorkExp = () => {
                 height: 50,
                 alt: "Work Logo",
               }}
-              title="Slack"
-              desc="Product Design - 4 years experience"
+              title="..."
+              desc="..."
             />
           </li>
-          <li>
+          <li className="opacity-60">
             <WorkExpCard
               imageLogo={{
                 url: "/slack.svg",
@@ -62,8 +60,8 @@ const WorkExp = () => {
                 height: 50,
                 alt: "Work Logo",
               }}
-              title="Slack"
-              desc="Product Design - 4 years experience"
+              title="..."
+              desc="..."
             />
           </li>
         </ul>
