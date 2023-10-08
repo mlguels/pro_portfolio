@@ -1,6 +1,4 @@
-import { ButtonLink } from "@/components";
 import Image from "next/image";
-import { text } from "stream/consumers";
 
 const Contact = () => {
   return (
@@ -23,15 +21,37 @@ const Contact = () => {
         </ul>
       </section>
 
-      <section className="flex flex-col md:flex-row justify-center">
-        <div className="flex flex-col">
-          <h3>My Socials</h3>
+      <section className="flex flex-col-reverse md:flex-row justify-center gap-10 md:gap-60 pt-16 p-5">
+        <div className="flex flex-col gap-5">
+          <h3 className="text-lg">My Socials</h3>
           <div className="flex gap-2">
-            <Image src="/githubIcon.svg" width={20} height={10} alt="github" />
-            <Image src="/linkedIn.svg" width={20} height={10} alt="linked in" />
+            <a
+              href="https://github.com/mlguels"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="/githubIcon.svg"
+                width={20}
+                height={10}
+                alt="github"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/miguel-andres-rodriguez/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="/linkedIn.svg"
+                width={20}
+                height={10}
+                alt="linked in"
+              />
+            </a>
           </div>
           <div>
-            <h3>Email Address</h3>
+            <h3 className="text-lg pb-4">Email Address</h3>
             <p className="flex gap-3 items-center text-[#778295] font-semibold">
               <span>
                 {" "}
@@ -52,31 +72,31 @@ const Contact = () => {
             <label htmlFor="subject">Subject</label>
             <input
               type="text"
-              className="bg-input py-2 rounded-lg"
+              className="bg-input rounded-lg opacity-50 p-2"
               name="subject"
               id="subject"
             />
           </li>
           <li className="flex flex-col">
             <label htmlFor="message">Message</label>
-            <input
-              type="text"
+            <textarea
+              rows={5}
               id="message"
               name="message"
-              className="bg-input py-8 rounded-lg"
+              className="bg-input rounded-lg opacity-50 p-2"
             />
           </li>
-          <li>
-            <label htmlFor="">
+          <li className="flex flex-col">
+            <label>
               Best way to reach out to you?{" "}
               <span className="text-[#778295]">eg. phone number or email</span>
             </label>
-            <input type="text" />
+            <textarea className="bg-input rounded-lg opacity-50 p-1" />
           </li>
           <li>
             <button
               type="submit"
-              className="bg-primary-dark text-[#FFFF] text-sm flex items-center gap-3 py-4 px-36 md:px-12 rounded-3xl"
+              className="bg-primary-dark text-[#FFFF] text-sm flex items-center gap-3 py-4 px-52 md:px-12 rounded-3xl"
             >
               Send
             </button>
