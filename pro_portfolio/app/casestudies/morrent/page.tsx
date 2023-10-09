@@ -104,6 +104,35 @@ const MorrentCaseStudy = () => {
           </li>
         </ul>
       </section>
+
+      {/* Morrent Info */}
+
+      <section className="bg-main-bg text-center p-16">
+        <ul className="flex flex-col gap-8">
+          <li>
+            <p className="text-[#6F74A7] text-lg text-left md:mx-32">
+              Morent, a cutting-edge car rental application that was developed
+              using the Next.js. The app boasts a dynamic homepage that
+              showcases featured vehicles, along with convenient pickup &
+              drop-off location options & a list of available cars.
+            </p>
+          </li>
+          <li>
+            <p className="text-[#6F74A7] text-lg text-left md:mx-32">
+              Morent is a modern Car renting application that was developed
+              using Next 13, Typescript and styled with Tailwind CSS. The Morent
+              application is to have a Homepage: consisting of a banner and
+              highlighted cars to rent, an All Cars page: which displays a list
+              of vehicles, an Add Car page: Add car details (images, title,
+              brand etc.) and a User page: which displays a list of cars rented
+              by the user and cars put to rent by the user.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      {/* Problem Statement */}
+      <section></section>
     </main>
   );
 };
