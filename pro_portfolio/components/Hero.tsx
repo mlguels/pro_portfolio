@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 
 import { Email, MyWorkButton, Scroll } from "@/components";
-import Link from "next/link";
 
 const poppings = Poppins({
   subsets: ["latin"],
