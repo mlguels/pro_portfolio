@@ -78,8 +78,8 @@ const MorrentCaseStudy = () => {
       </section>
 
       {/* Techstack */}
-      <section>
-        <ul className="text-center">
+      <section className="flex flex-col items-center gap-4 p-16">
+        <ul className="pr-52 md:pr-56">
           <li>
             <p className="text-[#0252CD] text-xs font-semibold">
               Technologies used
