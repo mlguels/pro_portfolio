@@ -3,7 +3,7 @@ import Image from "next/image";
 const MorrentCaseStudy = () => {
   return (
     <main>
-      <section className="bg-main-bg h-screen pt-16 p-10">
+      <section className="bg-main-bg h-auto pt-16 p-10">
         <ul className="flex flex-col items-center gap-20">
           <li>
             <Image
@@ -110,7 +110,7 @@ const MorrentCaseStudy = () => {
       <section className="bg-main-bg text-center p-16">
         <ul className="flex flex-col gap-8">
           <li>
-            <p className="text-[#6F74A7] text-lg text-left md:mx-32">
+            <p className="text-[#6F74A7] text-lg text-left md:mx-40">
               Morent, a cutting-edge car rental application that was developed
               using the Next.js. The app boasts a dynamic homepage that
               showcases featured vehicles, along with convenient pickup &
@@ -118,7 +118,7 @@ const MorrentCaseStudy = () => {
             </p>
           </li>
           <li>
-            <p className="text-[#6F74A7] text-lg text-left md:mx-32">
+            <p className="text-[#6F74A7] text-lg text-left md:mx-40">
               Morent is a modern Car renting application that was developed
               using Next 13, Typescript and styled with Tailwind CSS. The Morent
               application is to have a Homepage: consisting of a banner and
@@ -132,7 +132,6 @@ const MorrentCaseStudy = () => {
       </section>
 
       {/* Problem Statement */}
-      <section></section>
     </main>
   );
 };
