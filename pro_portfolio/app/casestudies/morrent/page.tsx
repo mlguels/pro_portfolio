@@ -164,6 +164,24 @@ const MorrentCaseStudy = () => {
           </li>
         </ul>
       </section>
+      <section>
+        <Image
+          src="/assets/HF.svg"
+          width={100}
+          height={100}
+          alt="HF"
+          className="w-screen"
+        />
+      </section>
+      <section>
+        <Image
+          src="/assets/img.svg"
+          width={100}
+          height={100}
+          alt="HF"
+          className="w-screen"
+        />
+      </section>
     </main>
   );
 };
