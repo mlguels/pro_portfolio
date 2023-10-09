@@ -13,7 +13,7 @@ const CaseStudies = () => {
               src="/casestudies.svg"
               width={600}
               height={50}
-              alt="case studes"
+              alt="case studies"
             />
           </li>
           <li>
@@ -31,15 +31,15 @@ const CaseStudies = () => {
 
       <section className="p-10 m-10">
         <ul className="grid md:grid-cols-2 justify-center gap-4 md:mx-52">
-          <li className="flex justify-center">
+          <li className="flex justify-center hover:opacity-50 cursor-pointer">
             <Link href="/casestudies/morrent">
               <Image src="/1.svg" width={600} height={250} alt="Morrent" />
             </Link>
           </li>
-          <li>
+          <li className="hover:opacity-50 cursor-not-allowed">
             <Image src="/2.svg" width={600} height={250} alt="Jobit" />
           </li>
-          <li className="flex justify-center">
+          <li className="flex justify-center hover:opacity-50 cursor-not-allowed">
             <Image src="/4.svg" width={600} height={250} alt="HipNode" />
           </li>
         </ul>
