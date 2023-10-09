@@ -132,6 +132,38 @@ const MorrentCaseStudy = () => {
       </section>
 
       {/* Problem Statement */}
+      <section className="p-16">
+        <ul className="flex flex-col item-center md:mx-40 gap-10">
+          <li className="flex flex-col gap-1">
+            <p className="text-[#0252CD] text-xs font-semibold">Problem</p>
+            <h2 className="text-2xl font-semibold">Problem Statement</h2>
+          </li>
+          <li>
+            <p className="text-[#6F74A7] text-lg">
+              During the course of the project, I encountered several challenges
+              that tested my problem-solving abilities. One of the initial
+              hurdles was grappling with the structure of Next.js 13 and the
+              organization of the app folder. As the App folder was still in the
+              Beta phase, I faced limitations in implementing authentication
+              using NextAuth since it was not yet supported with the App folder.
+              Overcoming this obstacle required me to explore alternative
+              solutions and adapt my approach to ensure the seamless functioning
+              of the application despite the limitations posed by the current
+              version of Next.js. Despite these setbacks, I remained resilient
+              and resourceful, finding workarounds and leveraging available
+              resources to deliver a successful outcome.
+            </p>
+          </li>
+          <li className="self-center">
+            <Image
+              src="/assets/problemstate.svg"
+              width={900}
+              height={400}
+              alt="react"
+            />
+          </li>
+        </ul>
+      </section>
     </main>
   );
 };
