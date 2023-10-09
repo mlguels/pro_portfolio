@@ -182,6 +182,69 @@ const MorrentCaseStudy = () => {
           className="w-screen"
         />
       </section>
+
+      {/* Way of work */}
+      <section className="flex flex-col items-center gap-4 p-16">
+        <ul>
+          <li>
+            <p className="text-[#0252CD] text-xs font-semibold">Way of work</p>
+          </li>
+          <li>
+            <h2 className="text-2xl font-semibold">My Process</h2>
+          </li>
+        </ul>
+        <ul className="flex flex-col md:flex-row gap-5">
+          <li className="flex gap-5">
+            <div className="flex flex-col">
+              <Image
+                src="/assets/tech1.svg"
+                width={100}
+                height={50}
+                alt="react"
+              />
+              <p className="text-xl font-semibold">Definition</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/assets/tech2.svg"
+                width={100}
+                height={50}
+                alt="react"
+              />
+              <p className="text-xl font-semibold">Design</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/assets/tech3.svg"
+                width={100}
+                height={50}
+                alt="react"
+              />
+              <p className="text-xl font-semibold">Planning</p>
+            </div>
+          </li>
+          <ul className="flex gap-4">
+            <li className="flex flex-col items-center">
+              <Image
+                src="/assets/tech4.svg"
+                width={100}
+                height={50}
+                alt="react"
+              />
+              <p className="text-xl font-semibold">Development</p>
+            </li>
+            <li className="flex flex-col items-center">
+              <Image
+                src="/assets/tech5.svg"
+                width={100}
+                height={50}
+                alt="react"
+              />
+              <p className="text-xl font-semibold">Deployment</p>
+            </li>
+          </ul>
+        </ul>
+      </section>
     </main>
   );
 };
