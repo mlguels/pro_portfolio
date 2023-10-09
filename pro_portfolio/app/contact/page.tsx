@@ -91,7 +91,7 @@ const Contact = () => {
               Best way to reach out to you?{" "}
               <span className="text-[#778295]">eg. phone number or email</span>
             </label>
-            <textarea className="bg-input rounded-lg opacity-50 p-1" />
+            <input className="bg-input rounded-lg opacity-50 p-2" />
           </li>
           <li>
             <button
