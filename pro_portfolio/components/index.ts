@@ -20,3 +20,5 @@ export { default as ButtonLink } from "./ButtonLink";
 export { default as GetInTouch } from "./GetInTouch";
 export { default as Footer } from "./Footer";
 export { default as Scroll } from "./Scroll";
+export { default as Challenges } from "./Challenges";
+export { default as Learnings } from "./Learnings";
