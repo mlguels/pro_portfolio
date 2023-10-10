@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { Learnings, Challenges } from "@/components";
+
 const MorrentCaseStudy = () => {
   return (
     <main>
@@ -244,6 +246,16 @@ const MorrentCaseStudy = () => {
             </li>
           </ul>
         </ul>
+      </section>
+
+      {/* Challenges and Learnings */}
+      <section className="p-10 flex flex-col gap-5">
+        <div className="md:mx-72">
+          <p className="text-[#0252CD] text-xs font-semibold">Problem</p>
+          <h2 className="text-2xl font-semibold">Challenges & Learnings</h2>
+        </div>
+        <Challenges />
+        <Learnings />
       </section>
     </main>
   );
