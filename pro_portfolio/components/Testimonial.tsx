@@ -7,7 +7,7 @@ interface personImage {
   alt: string;
 }
 
-interface TestimonialProps {
+export interface TestimonialProps {
   image: personImage;
   testimony: string;
   name: string;
