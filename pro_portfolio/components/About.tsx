@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Testimonial } from ".";
+
+import { Slider } from ".";
+import { testimonials } from "@/constants/testimonials";
 
 const About = () => {
   return (
@@ -15,20 +17,7 @@ const About = () => {
           />
         </li>
         <li>
-          <Testimonial
-            image={{
-              url: "/Adrian.svg",
-              width: 200,
-              height: 200,
-              alt: "Adrian",
-            }}
-            testimony="I have had the pleasure of working with Adrian as a Software Developer 
-            and can confidently say that he is a valuable asset to any team. He is highly skilled in 
-            ReactJS, NextJS, Javascript, Material UI, Tailwind CSS, Redux, and GitHub, and consistently 
-            delivers high-quality code. "
-            name="Adrian Hajdin"
-            info="Founder & CEO at JS Mastery"
-          />
+          <Slider testimonials={testimonials} />
         </li>
       </ul>
     </main>
