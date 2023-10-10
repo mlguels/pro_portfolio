@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { ServicesCard } from ".";
+import ServiceIcon1 from "./svgs/ServiceIcon1";
+import ServiceIcon2 from "./svgs/ServiceIcon2";
+import ServiceIcon3 from "./svgs/ServiceIcon3";
 
 const Services = () => {
   return (
@@ -9,36 +12,21 @@ const Services = () => {
         <ul className="flex flex-col md:flex-row gap-12 md:gap-16">
           <li>
             <ServicesCard
-              logoInfo={{
-                url: "/serviceIcon1.svg",
-                width: 100,
-                height: 100,
-                alt: "Icon",
-              }}
+              logoInfo={<ServiceIcon1 />}
               title="Analytics & SEO"
               desc="Implement tracking & analytics tools to monitor website performance & improve SEO."
             />
           </li>
           <li>
             <ServicesCard
-              logoInfo={{
-                url: "/serviceIcon2.svg",
-                width: 80,
-                height: 50,
-                alt: "Icon",
-              }}
+              logoInfo={<ServiceIcon2 />}
               title="Front-End Dev"
               desc="Front-end dev includes creating the user interface and interactive elements of websites and apps."
             />
           </li>
           <li>
             <ServicesCard
-              logoInfo={{
-                url: "/serviceIcon3.svg",
-                width: 100,
-                height: 100,
-                alt: "Icon",
-              }}
+              logoInfo={<ServiceIcon3 />}
               title="Back-End Dev"
               desc="
               Back-end involves building server-side logic, databases, and app functionality that power websites and apps."
@@ -47,12 +35,7 @@ const Services = () => {
           <li>
             {" "}
             <ServicesCard
-              logoInfo={{
-                url: "/serviceIcon4.svg",
-                width: 100,
-                height: 100,
-                alt: "Icon",
-              }}
+              logoInfo={<ServiceIcon1 />}
               title="Web Optimization"
               desc="Web optimization focuses on improving website performance for a smoother user experience"
             />
