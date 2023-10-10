@@ -1,6 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xjvqjvqd");
+  if (state.succeeded) {
+    return <p>Email Sent!</p>;
+  }
   return (
     <main>
       <section className="bg-main-bg h-[350px] items-center pt-24 p-8">
@@ -67,41 +74,64 @@ const Contact = () => {
           </div>
         </div>
 
-        <ul className="flex flex-col gap-8">
-          <li className="flex flex-col">
-            <label htmlFor="subject">Subject</label>
-            <input
-              type="text"
-              className="bg-input rounded-lg opacity-50 p-2"
-              name="subject"
-              id="subject"
-            />
-          </li>
-          <li className="flex flex-col">
-            <label htmlFor="message">Message</label>
-            <textarea
-              rows={5}
-              id="message"
-              name="message"
-              className="bg-input rounded-lg opacity-50 p-2"
-            />
-          </li>
-          <li className="flex flex-col">
-            <label>
-              Best way to reach out to you?{" "}
-              <span className="text-[#778295]">eg. phone number or email</span>
-            </label>
-            <input className="bg-input rounded-lg opacity-50 p-2" />
-          </li>
-          <li>
-            <button
-              type="submit"
-              className="bg-primary-dark text-[#FFFF] text-sm flex items-center gap-3 py-4 px-52 md:px-12 rounded-3xl"
-            >
-              Send
-            </button>
-          </li>
-        </ul>
+        <form onSubmit={handleSubmit}>
+          <ul className="flex flex-col gap-8">
+            <li className="flex flex-col">
+              <label htmlFor="subject">Subject</label>
+              <input
+                className="bg-input rounded-lg opacity-50 p-2"
+                name="subject"
+                id="subject"
+              />
+              <ValidationError
+                prefix="subject"
+                field="subject"
+                errors={state.errors}
+              />
+            </li>
+            <li className="flex flex-col">
+              <label htmlFor="message">Message</label>
+              <textarea
+                rows={5}
+                id="message"
+                name="message"
+                className="bg-input rounded-lg opacity-50 p-2"
+              />
+              <ValidationError
+                prefix="message"
+                field="message"
+                errors={state.errors}
+              />
+            </li>
+            <li className="flex flex-col">
+              <label>
+                Best way to reach out to you?{" "}
+                <span className="text-[#778295]">
+                  eg. phone number or email
+                </span>
+              </label>
+              <input
+                className="bg-input rounded-lg opacity-50 p-2"
+                id="info"
+                name="info"
+              />
+              <ValidationError
+                prefix="info"
+                field="info"
+                errors={state.errors}
+              />
+            </li>
+            <li>
+              <button
+                type="submit"
+                disabled={state.submitting}
+                className="bg-primary-dark text-[#FFFF] text-sm flex items-center gap-3 py-4 px-52 md:px-12 rounded-3xl"
+              >
+                Send
+              </button>
+            </li>
+          </ul>
+        </form>
       </section>
     </main>
   );
