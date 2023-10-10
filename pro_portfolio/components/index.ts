@@ -22,3 +22,4 @@ export { default as Footer } from "./Footer";
 export { default as Scroll } from "./Scroll";
 export { default as Challenges } from "./Challenges";
 export { default as Learnings } from "./Learnings";
+export { default as Slider } from "./Slider";
