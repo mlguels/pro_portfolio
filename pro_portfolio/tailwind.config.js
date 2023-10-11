@@ -23,7 +23,9 @@ module.exports = {
       morent: "#416CEA",
       hipnode: "#FF6934",
       input: "#CCE1FF",
+      black: "#192333",
     },
   },
   plugins: [],
+  darkMode: "class",
 };
