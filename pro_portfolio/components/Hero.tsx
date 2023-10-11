@@ -19,6 +19,7 @@ const Hero = () => {
       className="
         md:h-screen
         bg-main-bg
+        dark:bg-black
         "
     >
       <div

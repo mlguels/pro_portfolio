@@ -9,6 +9,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
     <div
       className="
       bg-main-bg
+      dark:bg-black
       max-w-[2520px]
       mx-auto
       xl:px-20
