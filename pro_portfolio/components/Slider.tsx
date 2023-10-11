@@ -21,13 +21,19 @@ const TestimonialSlider: React.FC<{ testimonials: TestimonialProps[] }> = ({
 
   return (
     <main className="flex gap-10 items-center justify-center">
-      <button onClick={prevSlide}>
+      <button
+        onClick={prevSlide}
+        className="hover:scale-[1.15] active:scale-105 transition"
+      >
         <Image src="/arrow-left.svg" width={35} height={25} alt="left arrow" />
       </button>
       <div>
         <Testimonial {...testimonials[currentIndex]} />
       </div>
-      <button onClick={nextSlide}>
+      <button
+        onClick={nextSlide}
+        className="hover:scale-[1.15] active:scale-105 transition"
+      >
         <Image
           src="/arrow-right.svg"
           width={35}
