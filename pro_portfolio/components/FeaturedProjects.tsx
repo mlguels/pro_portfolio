@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable react/jsx-key */
 import Image from "next/image";
 
@@ -8,8 +10,10 @@ import {
   ButtonLink,
 } from ".";
 import Link from "next/link";
+import { useTheme } from "@/context/theme-context";
 
 const FeaturedProjects = () => {
+  const { theme } = useTheme();
   return (
     <main
       id="featured_projects"
@@ -17,13 +21,23 @@ const FeaturedProjects = () => {
     >
       <ul className="flex flex-col gap-10 items-center">
         <li>
-          <Image
-            className="w-[430px] h-auto"
-            src="featuredprojects.svg"
-            width={200}
-            height={100}
-            alt="Featured Projects"
-          />
+          {theme === "light" ? (
+            <Image
+              className="w-[430px] h-auto"
+              src="featuredprojects.svg"
+              width={200}
+              height={100}
+              alt="Featured Projects"
+            />
+          ) : (
+            <Image
+              className="w-[430px] h-auto"
+              src="featuredprojectsDark.svg"
+              width={200}
+              height={100}
+              alt="Featured Projects"
+            />
+          )}
         </li>
         <li className="p-5">
           <FeaturedProjectv1

@@ -13,7 +13,10 @@ const WorkExp = () => {
             height={100}
             alt="Work Exp"
           />
-          <div className="pt-5">{/* <input type="range" /> */}</div>
+          <div className="pt-5">
+            {" "}
+            <input type="range" />
+          </div>
         </div>
         <ul className="flex flex-col gap-8">
           <li>
