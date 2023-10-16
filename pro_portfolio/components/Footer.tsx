@@ -1,10 +1,17 @@
+"use client";
+
+import { useTheme } from "@/context/theme-context";
 import Image from "next/image";
 
 const Footer = () => {
+  const { theme } = useTheme();
   return (
     <main className="pt-14 pb-14 pl-16 pr-16">
       <section className="flex justify-between">
-        <p className="text-[#778295]"> © 2023 Miguel. All rights reserved </p>
+        <p className="text-[#778295] dark:text-main-bg">
+          {" "}
+          © 2023 Miguel. All rights reserved.{" "}
+        </p>
         <ul className="flex gap-3">
           <li>
             <a
@@ -12,12 +19,21 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/linkedin.svg"
-                width={20}
-                height={10}
-                alt="LinkedIn"
-              />
+              {theme === "light" ? (
+                <Image
+                  src="/linkedin.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              ) : (
+                <Image
+                  src="/linkedinDark.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              )}
             </a>
           </li>
           <li>
@@ -26,12 +42,21 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/githubIcon.svg"
-                width={20}
-                height={10}
-                alt="LinkedIn"
-              />
+              {theme === "light" ? (
+                <Image
+                  src="/githubIcon.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              ) : (
+                <Image
+                  src="/githubDarks.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              )}
             </a>
           </li>
         </ul>
