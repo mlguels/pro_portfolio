@@ -35,11 +35,15 @@ const Testimonial: React.FC<TestimonialProps> = ({
             <Image src="/Stars.svg" width={100} height={10} alt="Stars" />
           </li>
           <li>
-            <p className="text-white-light text-xl max-w-xl">{testimony}</p>
+            <p className="text-white-light text-xl max-w-xl dark:text-main-bg">
+              {testimony}
+            </p>
           </li>
           <li className="flex flex-col gap-1">
-            <h4 className="text-[#192333] font-semibold">- {name}</h4>
-            <p className="text-white-light">{info}</p>
+            <h4 className="text-[#192333] font-semibold dark:text-main-bg">
+              - {name}
+            </h4>
+            <p className="text-white-light dark:text-main-bg">{info}</p>
           </li>
         </ul>
       </section>
