@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 
 import { Email, MyWorkButton, Scroll } from "@/components";
+import { useTheme } from "@/context/theme-context";
 
 const poppings = Poppins({
   subsets: ["latin"],
@@ -13,6 +14,7 @@ const poppings = Poppins({
 });
 
 const Hero = () => {
+  const { theme } = useTheme();
   return (
     <main
       id="/"
@@ -44,14 +46,24 @@ const Hero = () => {
                 HI, I AM MIGUEL
               </h3>
             </li>
-            <li>
-              <Image
-                src="/pwd2.png"
-                width={625}
-                height={20}
-                alt="Pro Web Dev"
-                priority
-              />
+            <li className={theme === "dark" && "pl-5"}>
+              {theme === "light" ? (
+                <Image
+                  src="/pwd2.png"
+                  width={625}
+                  height={20}
+                  alt="Pro Web Dev"
+                  priority
+                />
+              ) : (
+                <Image
+                  src="/pwdDark.svg"
+                  width={625}
+                  height={20}
+                  alt="Pro Web Dev"
+                  priority
+                />
+              )}
             </li>
             <li className="m-4 pl-2">
               <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit whitespace-nowrap dark:text-main-bg">
