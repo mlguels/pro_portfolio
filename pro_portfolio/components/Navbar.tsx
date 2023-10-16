@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { Container, Logo } from "@/components";
 import { useTheme } from "@/context/theme-context";
+import DownloadResume from "./svgs/DownloadResume";
 
 const Nav = () => {
   const { theme, toggleTheme } = useTheme();
@@ -18,27 +19,28 @@ const Nav = () => {
             </Link>
             <ul className="hidden md:flex gap-4">
               <Link href="/">
-                <li className="text-primary-dark hover:scale-[1.15] active:scale-105 transition">
+                <li className="text-primary-dark hover:scale-[1.15] active:scale-105 transition dark:text-primary-light">
                   Home
                 </li>
               </Link>
               <Link href="/casestudies">
-                <li className="text-white-light hover:scale-[1.15] active:scale-105 transition">
+                <li className="text-white-light hover:scale-[1.15] active:scale-105 transition dark:text-main-bg">
                   Case Studies
                 </li>
               </Link>
               <Link href="/contact">
-                <li className="text-white-light hover:scale-[1.15] active:scale-105 transition">
+                <li className="text-white-light hover:scale-[1.15] active:scale-105 transition dark:text-main-bg">
                   Contact
                 </li>
               </Link>
-              <li className="flex gap-2 text-black-200 font-200 hover:scale-[1.15] active:scale-105 transition">
-                <Image
+              <li className="flex items-center gap-2 text-black-200 font-200 hover:cursor-pointer hover:scale-[1.15] active:scale-105 transition dark:text-main-bg">
+                {/* <Image
                   src="/Vector.svg"
                   width={13}
                   height={13}
                   alt="Download"
-                />
+                /> */}
+                <DownloadResume />
                 <span>Resume</span>
               </li>
               <li className="text-white-light">|</li>
