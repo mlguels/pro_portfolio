@@ -11,7 +11,7 @@ const ServiceIcon3 = (
   >
     <g filter="url(#a)">
       <rect
-        className="group-hover:fill-[#FFFF]"
+        className="group-hover:fill-[#FFFF] dark:fill-primary-light"
         width={62}
         height={62}
         x={16.095}
