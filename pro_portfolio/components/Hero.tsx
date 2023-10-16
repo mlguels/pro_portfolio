@@ -39,7 +39,7 @@ const Hero = () => {
           <ul className="flex flex-col gap-2">
             <li className="m-5 pl-4">
               <h3
-                className={`${poppings.variable} text-primary-dark font-pop text-2xl font-semibold tracking-widest`}
+                className={`${poppings.variable} text-primary-dark font-pop text-2xl font-semibold tracking-widest dark:text-primary-light`}
               >
                 HI, I AM MIGUEL
               </h3>
@@ -54,7 +54,7 @@ const Hero = () => {
               />
             </li>
             <li className="m-4 pl-2">
-              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit whitespace-nowrap">
+              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit whitespace-nowrap dark:text-main-bg">
                 Transforming the web one line of code at a time: <br />
                 Crafting cutting-edge digital experiences with precision, <br />
                 passion, and a profound commintment to excellence

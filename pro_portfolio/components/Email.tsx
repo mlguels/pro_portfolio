@@ -35,7 +35,10 @@ const Email: React.FC = () => {
       px-10 
       rounded-3xl 
       bg-[#FFFF] 
-      hover:scale-105"
+      hover:scale-105
+      dark:bg-main-black
+      dark:text-[#FFFF]
+      "
     >
       <input
         ref={emailRef}
