@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ReactNode } from "react";
 
 interface LogoInfo {
@@ -26,12 +25,15 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
       h-[265px] 
       rounded-xl 
       flex 
-      flex-col 
-      justify-between 
+      flex-col  
+      justify-between
       bg-main-bg 
+      dark:hover:bg-primary-light
       p-4 
       ring 
       ring-main-bg 
+      dark:ring-black
+      dark:shadow-[#1F2E48]
       shadow-md
       shadow-primary-dark 
       hover:shadow-2xl
@@ -45,13 +47,14 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
       transition-transform 
       duration-300 
       ease-in-out
-      group"
+      group
+      dark:bg-black"
     >
-      <>{logoInfo}</>
-      <h3 className="font-bold text-2xl transition-colors duration-300 ease-in-out hover:text-[#FFFF]">
+      <div>{logoInfo}</div>
+      <h3 className="font-bold text-2xl transition-colors duration-300 ease-in-out hover:text-[#FFFF] dark:text-[#FFFF]">
         {title}
       </h3>
-      <p className="text-white-light transition-colors duration-300 ease-in-out hover:text-[#FFFF]">
+      <p className="text-white-light transition-colors duration-300 ease-in-out hover:text-[#FFFF] dark:text-[#F3F8FF]">
         {desc}
       </p>
     </div>
