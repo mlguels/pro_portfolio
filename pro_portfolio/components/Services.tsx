@@ -1,14 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import { ServicesCard } from ".";
 import ServiceIcon1 from "./svgs/ServiceIcon1";
 import ServiceIcon2 from "./svgs/ServiceIcon2";
 import ServiceIcon3 from "./svgs/ServiceIcon3";
+import { useTheme } from "@/context/theme-context";
 
 const Services = () => {
+  const { theme } = useTheme();
   return (
-    <main className="bg-main-bg md:h-[500px] p-4 pb-10">
+    <main className="bg-main-bg md:h-[500px] p-4 pb-10 dark:bg-black">
       <section className="flex flex-col pt-10 items-center gap-8">
-        <Image src="/services.svg" width={600} height={100} alt="Services" />
+        {theme === "light" ? (
+          <Image src="/services.svg" width={600} height={100} alt="Services" />
+        ) : (
+          <Image
+            src="/servicesDark.svg"
+            width={600}
+            height={100}
+            alt="Services"
+          />
+        )}
         <ul className="flex flex-col md:flex-row gap-12 md:gap-16">
           <li>
             <ServicesCard
@@ -33,7 +46,6 @@ const Services = () => {
             />
           </li>
           <li>
-            {" "}
             <ServicesCard
               logoInfo={<ServiceIcon1 />}
               title="Web Optimization"
