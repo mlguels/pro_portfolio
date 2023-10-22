@@ -1,8 +1,8 @@
 export const skillsData = [
   {
     name: "React",
-    iconPath: "/react.svg",
-    darkIconPath: "/reactDark.svg",
+    iconPath: "/newReact.svg",
+    darkIconPath: "/newreactDark.svg",
   },
   {
     name: "Javascript",

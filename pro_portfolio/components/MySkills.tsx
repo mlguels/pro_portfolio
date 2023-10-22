@@ -28,7 +28,7 @@ const MySkills = () => {
                 width={125}
                 height={125}
                 alt="Skill Icon"
-                className={`${theme === "light" && "grayscale-img"}`}
+                className="grayscale-img"
               />
             </li>
           ))}
