@@ -2,7 +2,7 @@ export const skillsData = [
   {
     name: "React",
     iconPath: "/newReact.svg",
-    darkIconPath: "/newreactDark.svg",
+    darkIconPath: "/darkSkills/rDark.svg",
   },
   {
     name: "Javascript",
@@ -12,42 +12,42 @@ export const skillsData = [
   {
     name: "NextJs",
     iconPath: "/next.svg",
-    darkIconPath: "/nextDark.svg",
+    darkIconPath: "/darkSkills/nDark.svg",
   },
   {
     name: "Typescript",
     iconPath: "/ts.svg",
-    darkIconPath: "/tsDark.svg",
+    darkIconPath: "/darkSkills/tDark.svg",
   },
   {
     name: "Tailwind",
     iconPath: "/tailwind.svg",
-    darkIconPath: "/tailwindDark.svg",
+    darkIconPath: "/darkSkills/taDark.svg",
   },
   {
     name: "CSS",
     iconPath: "/css.svg",
-    darkIconPath: "/cssDark.svg",
+    darkIconPath: "/darkSkills/cDark.svg",
   },
   {
     name: "Express",
     iconPath: "/express.svg",
-    darkIconPath: "/expressDark.svg",
+    darkIconPath: "/darkSkills/eDark.svg",
   },
   {
     name: "Github",
     iconPath: "/github.svg",
-    darkIconPath: "/githubDark.svg",
+    darkIconPath: "/darkSkills/ghDark.svg",
   },
   {
     name: "HTML",
     iconPath: "/html.svg",
-    darkIconPath: "/htmlDark.svg",
+    darkIconPath: "/darkSkills/hDark.svg",
   },
   {
     name: "Mongo",
     iconPath: "/mongo.svg",
-    darkIconPath: "/mongoDark.svg",
+    darkIconPath: "/darkSkills/mDark.svg",
   },
   {
     name: "MUI",
@@ -57,11 +57,11 @@ export const skillsData = [
   {
     name: "Node",
     iconPath: "/node.svg",
-    darkIconPath: "/nodeDark.svg",
+    darkIconPath: "/darkSkills/noDark.svg",
   },
   {
     name: "Git",
     iconPath: "/git.svg",
-    darkIconPath: "/gitDark.svg",
+    darkIconPath: "/darkSkills/gDark.svg",
   },
 ];
