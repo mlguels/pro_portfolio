@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Footer, Navbar } from "@/components";
+import { Footer, Navbar, Container } from "@/components";
 import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,13 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-black`}>
-        <ThemeContextProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeContextProvider>
-      </body>
+      <Container>
+        <body className={`${inter.className} dark:bg-black`}>
+          <ThemeContextProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeContextProvider>
+        </body>
+      </Container>
     </html>
   );
 }
