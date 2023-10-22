@@ -58,7 +58,7 @@ const Hero = () => {
               ) : (
                 <Image
                   src="/pwdDark.svg"
-                  width={625}
+                  width={615}
                   height={20}
                   alt="Pro Web Dev"
                   priority
@@ -86,7 +86,7 @@ const Hero = () => {
         </section>
         {/*Right side */}
         <section>
-          <Image src="/computer.png" width={825} height={100} alt="Comp Logo" />
+          <Image src="/computer.png" width={850} height={400} alt="Comp Logo" />
         </section>
       </div>
     </main>
