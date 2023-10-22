@@ -24,7 +24,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
     <main className="p-5">
       <section className="flex flex-col md:flex-row gap-10 pt-20">
         <Image
-          className="w-auto h-auto md:w-[328px] md:h-[328px]"
+          className="w-auto h-auto md:w-[328px] md:h-[328px] rounded-lg"
           src={image.url}
           width={image.width}
           height={image.height}
