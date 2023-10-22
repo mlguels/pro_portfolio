@@ -46,11 +46,11 @@ const Hero = () => {
                 HI, I AM MIGUEL
               </h3>
             </li>
-            <li className={theme === "dark" && "pl-5"}>
+            <li className={`${theme === "dark" && "pl-5"} w-auto`}>
               {theme === "light" ? (
                 <Image
                   src="/pwd2.png"
-                  width={625}
+                  width={615}
                   height={20}
                   alt="Pro Web Dev"
                   priority
@@ -73,7 +73,7 @@ const Hero = () => {
               </p>
             </li>
           </ul>
-          <ul className="flex flex-col justify-between md:flex-row md:gap-[40px] pt-1 m-5">
+          <ul className="flex flex-col md:flex-row gap-5 pt-1 m-5">
             <li>
               <Scroll href="#featured_projects">
                 <MyWorkButton />
