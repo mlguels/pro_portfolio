@@ -31,7 +31,8 @@ const CaseStudies = () => {
           </li>
           <li>
             <p className="text-white-light text-lg dark:text-main-bg">
-              Dive into my recent success stories and discover how I've worked{" "}
+              Dive into my recent success stories and discover how I&aposve
+              worked{" "}
               <span className="hidden md:inline">
                 <br />
               </span>

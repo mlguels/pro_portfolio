@@ -2,23 +2,34 @@
 
 import Image from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
+import { useTheme } from "@/context/theme-context";
 
 const Contact = () => {
+  const { theme } = useTheme();
   const [state, handleSubmit] = useForm("xjvqjvqd");
   if (state.succeeded) {
     return <p>Email Sent!</p>;
   }
   return (
     <main>
-      <section className="bg-main-bg h-[350px] items-center pt-24 p-8">
+      <section className="bg-main-bg dark:bg-main-black h-[350px] items-center pt-24 p-8">
         <ul className="flex flex-col items-center gap-6">
           <li>
-            <Image
-              src="/getintouch.svg"
-              width={425}
-              height={50}
-              alt="case studes"
-            />
+            {theme === "light" ? (
+              <Image
+                src="/getintouch.svg"
+                width={425}
+                height={50}
+                alt="case studes"
+              />
+            ) : (
+              <Image
+                src="/getinTouchDark.svg"
+                width={425}
+                height={50}
+                alt="case studes"
+              />
+            )}
           </li>
           <li>
             <p className="text-white-light text-lg">
@@ -30,36 +41,56 @@ const Contact = () => {
 
       <section className="flex flex-col-reverse md:flex-row justify-center gap-10 md:gap-60 pt-16 p-5">
         <div className="flex flex-col gap-5">
-          <h3 className="text-lg">My Socials</h3>
+          <h3 className="text-xl dark:text-[#FFFFFF]">My Socials</h3>
           <div className="flex gap-2">
             <a
               href="https://github.com/mlguels"
               target="_blank"
               rel="noreferrer"
+              className="hover:opacity-50 transition"
             >
-              <Image
-                src="/githubIcon.svg"
-                width={20}
-                height={10}
-                alt="github"
-              />
+              {theme === "light" ? (
+                <Image
+                  src="/githubIcon.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              ) : (
+                <Image
+                  src="/githubDarks.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              )}
             </a>
             <a
               href="https://www.linkedin.com/in/miguel-andres-rodriguez/"
               target="_blank"
               rel="noreferrer"
+              className="hover:opacity-50 transition"
             >
-              <Image
-                src="/linkedIn.svg"
-                width={20}
-                height={10}
-                alt="linked in"
-              />
+              {theme === "light" ? (
+                <Image
+                  src="/linkedin.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              ) : (
+                <Image
+                  src="/linkedinDark.svg"
+                  width={20}
+                  height={10}
+                  alt="LinkedIn"
+                />
+              )}
             </a>
           </div>
           <div>
-            <h3 className="text-lg pb-4">Email Address</h3>
-            <p className="flex gap-3 items-center text-[#778295] font-semibold">
+            <h3 className="text-xl pb-4 dark:text-[#FFFFFF]">Email Address</h3>
+            <p className="flex gap-3 items-center text-[#778295] font-semibold dark:text-[#FFFF] text-xl">
               <span>
                 {" "}
                 <Image
@@ -67,6 +98,7 @@ const Contact = () => {
                   width={20}
                   height={10}
                   alt="linked in"
+                  className="hover:opacity-50 transition cursor-pointer"
                 />
               </span>
               mrodandres@icloud.com
@@ -76,10 +108,12 @@ const Contact = () => {
 
         <form onSubmit={handleSubmit}>
           <ul className="flex flex-col gap-8">
-            <li className="flex flex-col">
-              <label htmlFor="subject">Subject</label>
+            <li className="flex flex-col gap-2">
+              <label className="dark:text-[#FFFFFF]" htmlFor="subject">
+                Subject
+              </label>
               <input
-                className="bg-input rounded-lg opacity-50 p-2"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56]"
                 name="subject"
                 id="subject"
               />
@@ -89,13 +123,15 @@ const Contact = () => {
                 errors={state.errors}
               />
             </li>
-            <li className="flex flex-col">
-              <label htmlFor="message">Message</label>
+            <li className="flex flex-col gap-2">
+              <label className="dark:text-[#FFFFFF]" htmlFor="message">
+                Message
+              </label>
               <textarea
                 rows={5}
                 id="message"
                 name="message"
-                className="bg-input rounded-lg opacity-50 p-2"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56]"
               />
               <ValidationError
                 prefix="message"
@@ -103,15 +139,15 @@ const Contact = () => {
                 errors={state.errors}
               />
             </li>
-            <li className="flex flex-col">
-              <label>
+            <li className="flex flex-col gap-2">
+              <label className="dark:text-[#FFFFFF]">
                 Best way to reach out to you?{" "}
                 <span className="text-[#778295]">
                   eg. phone number or email
                 </span>
               </label>
               <input
-                className="bg-input rounded-lg opacity-50 p-2"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56]"
                 id="info"
                 name="info"
               />
@@ -121,11 +157,11 @@ const Contact = () => {
                 errors={state.errors}
               />
             </li>
-            <li>
+            <li className="self-end">
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="bg-primary-dark text-[#FFFF] text-sm flex items-center gap-3 py-4 px-52 md:px-12 rounded-3xl"
+                className="bg-primary-dark dark:bg-primary-light text-[#FFFF] text-sm flex items-center gap-3 py-4 px-52 md:px-12 rounded-3xl hover:opacity-80"
               >
                 Send
               </button>
