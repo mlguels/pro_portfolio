@@ -17,7 +17,7 @@ const FeaturedProjects = () => {
   return (
     <main
       id="featured_projects"
-      className="h-auto flex justify-center pt-20 pb-5 dark:bg-main-black"
+      className="h-auto flex justify-center pt-20 pb-10 dark:bg-main-black"
     >
       <ul className="flex flex-col gap-10 items-center">
         <li>
@@ -98,7 +98,7 @@ const FeaturedProjects = () => {
           />
         </li>
         <li>
-          <Link href="/casestudies">
+          <Link className="hidden md:inline lg:inline" href="/casestudies">
             <ButtonLink text="See more case studies" />
           </Link>
         </li>
