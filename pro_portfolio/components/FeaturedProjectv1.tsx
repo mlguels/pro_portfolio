@@ -32,12 +32,14 @@ const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
 }) => {
   return (
     <main
-      className={`${background} w-auto h-auto lg:w-[1200px] lg:h-[444px] rounded-2xl`}
+      className={`${background} min-w-[445px] h-auto md:w-[1200px] md:h-[444px] rounded-2xl p-6`}
     >
-      <section className="flex flex-col md:flex-row items-center p-10">
+      <section className="flex flex-col md:flex-row items-center">
         <section>
           <ul className="flex flex-col p-8 gap-8">
-            <li className="text-5xl text-[#FFFF] font-bold">{projectTitle}</li>
+            <li className="text-4xl lg:text-5xl text-[#FFFF] font-bold">
+              {projectTitle}
+            </li>
             <li className="flex flex-col md:flex-row gap-4">
               {technologies.map((tech, index) => (
                 <div key={index}>{tech}</div>
@@ -57,7 +59,7 @@ const FeaturedProjectv1: React.FC<FeaturedProjectv1Props> = ({
                 alt={desktopView.alt}
               />
             </li>
-            <li className="md:-mx-10">
+            <li className="md:-mx-6">
               <Image
                 className="w-auto h-auto"
                 src={mobileView.url}
