@@ -28,16 +28,17 @@ const Email: React.FC = () => {
       flex 
       justify-between 
       items-center 
-      gap-3 
-      text-lg 
+      gap-5
+      text-xl
       font-semibold 
-      py-4 
-      px-10 
+      py-6
+      px-10
       rounded-3xl 
       bg-[#FFFF] 
       hover:scale-105
       dark:bg-main-black
       dark:text-[#FFFF]
+      font-pop
       "
     >
       <input
@@ -47,7 +48,7 @@ const Email: React.FC = () => {
         className="hidden"
       />
       mrodandres@icloud.com
-      <span className="mt-2">
+      <span className="flex justify-center items-center">
         <button onClick={handleCopyEmail}>
           <Image
             className="min-w-fit"
