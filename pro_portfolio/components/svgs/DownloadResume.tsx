@@ -3,8 +3,9 @@ const SvgComponent = (
   props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
 ) => (
   <svg
+    className="w-5"
     xmlns="http://www.w3.org/2000/svg"
-    width={14}
+    width={15}
     height={15}
     fill="none"
     {...props}

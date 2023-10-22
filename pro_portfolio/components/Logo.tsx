@@ -9,7 +9,7 @@ const Logo = () => {
   return (
     <Image
       alt="Logo"
-      className="md:block cursor-pointer"
+      className="md:block cursor-pointer hover:opacity-50 transition"
       height={50}
       width={50}
       src="/Logo.svg"

@@ -7,7 +7,7 @@ interface DetailProjectButtonProps {
 
 const DetailProjectButton: React.FC<DetailProjectButtonProps> = ({ href }) => {
   return (
-    <Link href={href}>
+    <Link href={href} className="hover:opacity-50 transition">
       <Image
         src="/seeDetailProject.svg"
         width={200}

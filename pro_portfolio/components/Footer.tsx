@@ -13,7 +13,7 @@ const Footer = () => {
           © 2023 Miguel. All rights reserved.{" "}
         </p>
         <ul className="flex gap-3">
-          <li>
+          <li className="hover:opacity-50 transition">
             <a
               href="https://www.linkedin.com/in/miguel-andres-rodriguez/"
               target="_blank"
@@ -36,7 +36,7 @@ const Footer = () => {
               )}
             </a>
           </li>
-          <li>
+          <li className="hover:opacity-50 transition">
             <a
               href="https://github.com/mlguels"
               target="_blank"

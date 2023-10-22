@@ -35,10 +35,11 @@ const Email: React.FC = () => {
       px-10
       rounded-3xl 
       bg-[#FFFF] 
-      hover:scale-105
       dark:bg-main-black
       dark:text-[#FFFF]
       font-pop
+      hover:opacity-50 
+      transition
       "
     >
       <input
