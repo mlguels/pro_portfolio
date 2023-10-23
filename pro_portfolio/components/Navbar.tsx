@@ -33,7 +33,7 @@ const Nav = () => {
                   Contact
                 </li>
               </Link>
-              <li className="flex items-center text-black-200 font-200 transition hover:opacity-50 dark:text-main-bg cursor-pointer ">
+              <li className="flex items-center text-black-200 font-200 transition hover:opacity-50 dark:text-main-bg cursor-pointer pb-1">
                 {/* <Image
                   src="/Vector.svg"
                   width={13}
