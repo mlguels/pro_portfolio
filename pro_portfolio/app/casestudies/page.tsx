@@ -10,7 +10,7 @@ const CaseStudies = () => {
   const { theme } = useTheme();
   return (
     <main>
-      <section className="bg-main-bg h-[400px] items-center pt-24 p-8 dark:bg-main-black">
+      <section className="bg-main-bg h-[400px] items-center pt-24 p-8 dark:bg-black">
         <ul className="flex flex-col items-center gap-6">
           <li>
             {theme === "light" ? (

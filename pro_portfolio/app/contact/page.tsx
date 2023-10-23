@@ -12,7 +12,7 @@ const Contact = () => {
   }
   return (
     <main>
-      <section className="bg-main-bg dark:bg-main-black h-[350px] items-center pt-24 p-8">
+      <section className="bg-main-bg dark:bg-black h-[350px] items-center pt-24 p-8">
         <ul className="flex flex-col items-center gap-6">
           <li>
             {theme === "light" ? (
