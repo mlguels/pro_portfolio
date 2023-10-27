@@ -3,13 +3,21 @@
 import Image from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
 import { useTheme } from "@/context/theme-context";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const { theme } = useTheme();
   const [state, handleSubmit] = useForm("xjvqjvqd");
-  if (state.succeeded) {
-    return <p>Email Sent!</p>;
-  }
+  const router = useRouter();
+
+  useEffect(() => {
+    if (state.succeeded) {
+      router.push("/");
+    }
+    toast.success("Message sent!");
+  }, [router, state.succeeded]);
   return (
     <main>
       <section className="bg-main-bg dark:bg-black h-[350px] items-center pt-24 p-8">
