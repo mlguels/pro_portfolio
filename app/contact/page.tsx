@@ -12,6 +12,14 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xjvqjvqd");
   const router = useRouter();
 
+  const email = "mrodandres@icloud.com";
+  const subject = "Hello";
+
+  const handleClick = () => {
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
+  };
+
   useEffect(() => {
     if (state.succeeded) {
       router.push("/");
@@ -100,14 +108,15 @@ const Contact = () => {
             <h3 className="text-xl pb-4 dark:text-[#FFFFFF]">Email Address</h3>
             <p className="flex gap-3 items-center text-[#778295] font-semibold dark:text-[#FFFF] text-xl">
               <span>
-                {" "}
-                <Image
-                  src="/Message.svg"
-                  width={20}
-                  height={10}
-                  alt="linked in"
-                  className="hover:opacity-50 transition cursor-pointer"
-                />
+                <button onClick={handleClick}>
+                  <Image
+                    src="/Message.svg"
+                    width={20}
+                    height={10}
+                    alt="linked in"
+                    className="hover:opacity-50 transition cursor-pointer"
+                  />
+                </button>
               </span>
               mrodandres@icloud.com
             </p>
