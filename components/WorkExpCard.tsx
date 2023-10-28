@@ -1,5 +1,28 @@
 import Image from "next/image";
 
+const content = [
+  {
+    title: "JSM Pro Master Class",
+    desc: "Full-Stack Developer - 6 months +",
+    url: "/jsmlogl.webp",
+  },
+  {
+    title: "Another Job Title",
+    desc: "Another job description.",
+    url: "/jsmlogl.webp",
+  },
+  {
+    title: "Yet Another Job",
+    desc: "This is the description for another job.",
+    url: "/jsmlogl.webp",
+  },
+  {
+    title: "One More Job",
+    desc: "This is the description for one more job.",
+    url: "/jsmlogl.webp",
+  },
+];
+
 interface ImageLogo {
   url: string;
   width: number;
@@ -11,6 +34,7 @@ interface WorkExpCardProps {
   imageLogo: ImageLogo;
   title: string;
   desc: string;
+  show: boolean;
 }
 
 const WorkExpCard: React.FC<WorkExpCardProps> = ({
