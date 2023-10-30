@@ -5,7 +5,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useTheme } from "@/context/theme-context";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const { theme } = useTheme();
@@ -23,11 +23,21 @@ const Contact = () => {
   useEffect(() => {
     if (state.succeeded) {
       router.push("/");
+      toast.success("Message Sent!", {
+        duration: 2000,
+        position: "top-center",
+
+        ariaProps: {
+          role: "status",
+          "aria-live": "polite",
+        },
+      });
     }
-    toast.success("Message sent!");
   }, [router, state.succeeded]);
+
   return (
     <main>
+      <Toaster />
       <section className="bg-main-bg dark:bg-black h-[350px] items-center pt-24 p-8">
         <ul className="flex flex-col items-center gap-6">
           <li>
