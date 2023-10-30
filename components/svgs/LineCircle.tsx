@@ -4,7 +4,7 @@ const SvgComponent = (
   props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
 ) => (
   <svg
-    className="dark:bg-main-black"
+    className=""
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     width={100}
