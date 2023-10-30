@@ -1,11 +1,13 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import LineCircle from "./svgs/LineCircle";
+import { useTheme } from "@/context/theme-context";
 
 const ScrollBar = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [positionX, setPositionX] = useState(0);
   const initialPositionX = useRef(0);
+  const { theme } = useTheme();
   const containerWidth = 800;
 
   const handleMouseDown = (e: { clientX: number }) => {
@@ -43,7 +45,11 @@ const ScrollBar = () => {
     >
       <ul className="flex flex-col pb-32 pr-14">
         <li className="translate-y-12">
-          <Image src="/Line.svg" width={500} height={100} alt="Line" />
+          {theme === "light" ? (
+            <Image src="/Line.svg" width={500} height={100} alt="Line" />
+          ) : (
+            <Image src="/LineDark.svg" width={500} height={100} alt="Line" />
+          )}
         </li>
         <li
           className="cursor-pointer"

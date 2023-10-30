@@ -1,32 +1,40 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 
 import { WorkExpCard } from ".";
 import ScrollBar from "./ScrollBar";
+import { useTheme } from "@/context/theme-context";
 
 const WorkExp = () => {
-  const [slide, setSlide] = useState([0]);
+  const { theme } = useTheme();
   return (
-    <main className="bg-[#FFFF] pt-12 pb-12">
+    <main className="bg-[#FFFF] dark:bg-main-black pt-12 pb-12 p-5">
       <section className="flex flex-col md:flex-row items-center justify-center gap-14">
-        <div className="bg-main-bg dark:bg-main-black md:w-[700px] md:h-[600px] flex flex-col items-center rounded-xl justify-center gap-14">
-          <div className="text-6xl font-bold tracking-wider pr-4 pt-36">
+        <div className="bg-main-bg dark:bg-black md:w-[700px] h-[600px] md:h-[650px] flex flex-col items-center rounded-xl justify-center gap-14">
+          <div className="text-5xl md:text-6xl font-bold tracking-wider pr-8 pt-40 dark:text-[#FFFFFF]">
             Work Experience
           </div>
-          <h2 className="text-[#6F74A7] mx-20 text-xl">
-            Take a trip through my career, where I&aposve not only paved the way
-            but also reached important goals, taken on different roles, worked
-            on impressive projects, and accomplished notable things.
+          <h2 className="text-[#6F74A7] mx-8 md:mx-20 md:text-xl dark:text-[#F3F8FF]">
+            Take a trip through my career, where I've not only paved the way but
+            also reached important goals, taken on different{" "}
+            <span className="text-primary-dark">roles</span>, worked on
+            impressive <span className="text-primary-dark">projects</span>, and
+            accomplished notable things.
           </h2>
-          <p className="text-[#6F74A7] mx-20 text-xl">
+          <p className="text-[#6F74A7] mx-8 md:mx-20 md:text-xl dark:text-[#F3F8FF]">
             From coding in the late hours to collaborating with talented teams,
-            my career has been a dynamic adventure filled with growth and
-            innovation.
+            my career has been a dynamic adventure filled with{" "}
+            <span className="text-primary-dark">growth</span> and{" "}
+            <span className="text-primary-dark">innovation</span>.
           </p>
-          <div className="flex flex-col gap-2">
-            <Image src="/slide.svg" width={350} height={100} alt="Slide" />
+          <div className="p-10">
+            {theme === "light" ? (
+              <Image src="/slide.svg" width={425} height={100} alt="Slide" />
+            ) : (
+              <Image src="/slideDar.svg" width={425} height={100} alt="Slide" />
+            )}
+
             <ScrollBar />
           </div>
         </div>
