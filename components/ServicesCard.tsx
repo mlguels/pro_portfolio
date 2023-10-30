@@ -30,11 +30,11 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
       bg-main-bg 
       dark:hover:bg-primary-light
       p-4 
-      ring 
+      ring-1
       ring-main-bg 
       dark:ring-black
       dark:shadow-[#1F2E48]
-      shadow-md
+      shadow-sm
       shadow-primary-dark 
       hover:shadow-2xl
       hover:shadow-primary-dark
