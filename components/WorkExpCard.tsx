@@ -8,13 +8,6 @@ const content = [
   },
 ];
 
-// interface ImageLogo {
-//   url: string;
-//   width: number;
-//   height: number;
-//   alt: string;
-// }
-
 interface WorkExpCardProps {}
 
 const WorkExpCard: React.FC<WorkExpCardProps> = ({}) => {
