@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Container, Email, Logo } from "@/components";
+import { Container, Logo } from "@/components";
 import { useTheme } from "@/context/theme-context";
 import DownloadResume from "./svgs/DownloadResume";
 import { useState } from "react";
@@ -41,8 +41,12 @@ const Nav = () => {
                 </li>
               </Link>
               <li className="flex items-center text-black-200 font-200 transition hover:opacity-50 dark:text-main-bg cursor-pointer pb-1">
-                <DownloadResume />
-                <span>Resume</span>
+                <a href="/Resume.pdf" download="miguel-rodriguez.pdf">
+                  <DownloadResume />
+                </a>
+                <a href="/Resume.pdf" download="miguel-rodriguez.pdf">
+                  <span>Resume</span>
+                </a>
               </li>
               <li className="text-white-light">|</li>
               <li>
