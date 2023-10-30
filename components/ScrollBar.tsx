@@ -6,7 +6,7 @@ const ScrollBar = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [positionX, setPositionX] = useState(0);
   const initialPositionX = useRef(0);
-  const containerWidth = 800; // Set your desired container width
+  const containerWidth = 800;
 
   const handleMouseDown = (e) => {
     setIsDragging(true);
@@ -22,9 +22,8 @@ const ScrollBar = () => {
       const deltaX = e.clientX - initialPositionX.current;
       const newPositionX = positionX + deltaX;
 
-      // Define your limits
       const minPositionX = -20;
-      const maxPositionX = containerWidth - 390; // Adjust the 100 as needed
+      const maxPositionX = containerWidth - 390;
 
       const constrainedPositionX = Math.max(
         minPositionX,
