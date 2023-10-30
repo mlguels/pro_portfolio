@@ -8,7 +8,7 @@ const ScrollBar = () => {
   const initialPositionX = useRef(0);
   const containerWidth = 800;
 
-  const handleMouseDown = (e) => {
+  const handleMouseDown = (e: { clientX: number }) => {
     setIsDragging(true);
     initialPositionX.current = e.clientX;
   };
@@ -17,7 +17,7 @@ const ScrollBar = () => {
     setIsDragging(false);
   };
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: { clientX: number }) => {
     if (isDragging) {
       const deltaX = e.clientX - initialPositionX.current;
       const newPositionX = positionX + deltaX;
