@@ -140,7 +140,7 @@ const Contact = () => {
                 Subject
               </label>
               <input
-                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56]"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] focus:text-main-bg"
                 name="subject"
                 id="subject"
               />
@@ -151,14 +151,17 @@ const Contact = () => {
               />
             </li>
             <li className="flex flex-col gap-2">
-              <label className="dark:text-[#FFFFFF]" htmlFor="message">
+              <label
+                className="dark:text-[#FFFFFF] focus:text-main-bg"
+                htmlFor="message"
+              >
                 Message
               </label>
               <textarea
                 rows={5}
                 id="message"
                 name="message"
-                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56]"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] focus:text-main-bg"
               />
               <ValidationError
                 prefix="message"
@@ -174,7 +177,7 @@ const Contact = () => {
                 </span>
               </label>
               <input
-                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56]"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] focus:text-main-bg"
                 id="info"
                 name="info"
               />
