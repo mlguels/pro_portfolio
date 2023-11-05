@@ -1,14 +1,21 @@
-import React, { useState, useRef } from "react";
-import Image from "next/image";
-import LineCircle from "./svgs/LineCircle";
 import { useTheme } from "@/context/theme-context";
+import { useState, useRef } from "react";
+import LineCircle from "./svgs/LineCircle";
+import Image from "next/image";
+import { workExperienceContent } from "@/constants/work";
 
-const ScrollBar = () => {
+interface Props {
+  contentIndex: number;
+  scrollToNextContent: () => void;
+}
+
+const ScrollBar = ({ contentIndex, scrollToNextContent }: Props) => {
   const [isDragging, setIsDragging] = useState(false);
   const [positionX, setPositionX] = useState(0);
   const initialPositionX = useRef(0);
   const { theme } = useTheme();
   const containerWidth = 800;
+  const content = workExperienceContent[contentIndex];
 
   const handleMouseDown = (e: { clientX: number }) => {
     setIsDragging(true);
@@ -37,18 +44,35 @@ const ScrollBar = () => {
     }
   };
 
+  const handleMouseWheel = (e: { deltaY: number }) => {
+    if (e.deltaY > 0) {
+      scrollToNextContent();
+    }
+  };
+
   return (
     <section
       className="flex flex-col"
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
+      onWheel={handleMouseWheel}
     >
       <ul className="flex flex-col pb-32 pr-14">
         <li className="translate-y-12">
           {theme === "light" ? (
-            <Image src="/Line.svg" width={500} height={100} alt="Line" />
+            <Image
+              src={content.imageLight}
+              width={500}
+              height={100}
+              alt="Line"
+            />
           ) : (
-            <Image src="/LineDark.svg" width={500} height={100} alt="Line" />
+            <Image
+              src={content.imageDark}
+              width={500}
+              height={100}
+              alt="Line"
+            />
           )}
         </li>
         <li
