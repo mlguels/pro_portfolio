@@ -114,22 +114,24 @@ const Contact = () => {
               )}
             </a>
           </div>
-          <div>
-            <h3 className="text-xl pb-4 dark:text-[#FFFFFF]">Email Address</h3>
-            <p className="flex gap-3 items-center text-[#778295] font-semibold dark:text-[#FFFF] text-xl">
-              <span>
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl dark:text-[#FFFFFF]">Email Address</h3>
+            <div className="flex gap-3">
+              <div>
                 <button onClick={handleClick}>
                   <Image
                     src="/Message.svg"
                     width={20}
                     height={10}
                     alt="linked in"
-                    className="hover:opacity-50 transition cursor-pointer"
+                    className="hover:opacity-50 transition cursor-pointer mt-0.5"
                   />
                 </button>
-              </span>
-              mrodandres@icloud.com
-            </p>
+              </div>
+              <p className="text-[#778295] font-semibold dark:text-[#FFFF] text-xl -my-1">
+                mrodandres@icloud.com
+              </p>
+            </div>
           </div>
         </div>
 
