@@ -1,7 +1,9 @@
+"use client";
+
 import { useTheme } from "@/context/theme-context";
-import { useState, useRef } from "react";
-import LineCircle from "./svgs/LineCircle";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import LineCircle from "./svgs/LineCircle";
 import { workExperienceContent } from "@/constants/work";
 
 interface Props {
@@ -44,18 +46,28 @@ const ScrollBar = ({ contentIndex, scrollToNextContent }: Props) => {
     }
   };
 
-  const handleMouseWheel = (e: { deltaY: number }) => {
-    if (e.deltaY > 0) {
-      scrollToNextContent();
-    }
-  };
+  useEffect(() => {
+    // Attach scroll event listener to the document body
+    const handleMouseWheel = (e: WheelEvent) => {
+      if (e.deltaY > 0) {
+        // Scrolling down
+        scrollToNextContent();
+      }
+    };
+
+    document.body.addEventListener("wheel", handleMouseWheel);
+
+    return () => {
+      // Remove the event listener when the component unmounts
+      document.body.removeEventListener("wheel", handleMouseWheel);
+    };
+  }, [scrollToNextContent]);
 
   return (
     <section
       className="flex flex-col"
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
-      onWheel={handleMouseWheel}
     >
       <ul className="flex flex-col pb-32 pr-14">
         <li className="translate-y-12">
