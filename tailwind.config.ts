@@ -25,6 +25,19 @@ module.exports = {
       input: "#CCE1FF",
       black: "#192333",
     },
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    screens: {
+      xs: "420px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+    },
   },
   plugins: [],
   darkMode: "class",
