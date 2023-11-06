@@ -19,10 +19,12 @@ const Hero = () => {
     <main
       id="/"
       className="
-        md:h-screen
         bg-main-bg
         dark:bg-black
-        p-8
+        flex
+        items-center
+        justify-center
+        md:pl-10
         "
     >
       <div
