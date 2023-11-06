@@ -22,6 +22,7 @@ const Hero = () => {
         md:h-screen
         bg-main-bg
         dark:bg-black
+        p-8
         "
     >
       <div
@@ -30,30 +31,24 @@ const Hero = () => {
         flex-col 
         md:flex-row 
         items-center 
-        justify-around
-        pt-10
-        pl-10
-        pr-10 
-        w-auto
         "
       >
-        <section>
-          <ul className="flex flex-col gap-2">
-            <li className="m-5 pl-4">
+        <section className="flex flex-col justify-start items-start gap-4 p-4">
+          <ul className="flex flex-col gap-2 items-start">
+            <li>
               <h3
-                className={`${poppings.variable} text-primary-dark font-pop text-2xl font-semibold tracking-widest dark:text-primary-light`}
+                className={`${poppings.variable} text-primary-dark font-pop text-2xl pl-1 font-semibold tracking-widest dark:text-primary-light`}
               >
                 HI, I AM MIGUEL
               </h3>
             </li>
-            <li className={`${theme === "dark" && "pl-5"} w-auto`}>
+            <li className={`${theme === "dark" && ""} w-auto`}>
               {theme === "light" ? (
                 <Image
-                  src="/pwd2.png"
+                  src="/newPWD.svg"
                   width={615}
                   height={20}
                   alt="Pro Web Dev"
-                  priority
                 />
               ) : (
                 <Image
@@ -61,19 +56,18 @@ const Hero = () => {
                   width={615}
                   height={20}
                   alt="Pro Web Dev"
-                  priority
                 />
               )}
             </li>
-            <li className="m-4 pl-2">
-              <p className="text-[#6F74A7] font-pop text-lg md:text-2xl max-w-fit whitespace-nowrap dark:text-main-bg">
+            <li>
+              <p className="text-[#6F74A7] font-pop md:text-xl whitespace-nowrap dark:text-main-bg">
                 Transforming the web one line of code at a time: <br />
                 Crafting cutting-edge digital experiences with precision, <br />
                 passion, and a profound commintment to excellence
               </p>
             </li>
           </ul>
-          <ul className="flex flex-col md:flex-row gap-5 pt-1 m-5">
+          <ul className="flex flex-col md:flex-row gap-5 mx-auto w-full">
             <li>
               <Scroll href="#featured_projects">
                 <MyWorkButton />
