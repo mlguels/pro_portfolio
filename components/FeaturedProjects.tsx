@@ -59,7 +59,7 @@ const FeaturedProjects = () => {
               alt: "Morent Logo",
             }}
             mobileView={{
-              url: "/morentMobile.svg",
+              url: "/morentNewMobile.svg",
               width: 100,
               height: 50,
               alt: "Morent Logo",
@@ -93,6 +93,35 @@ const FeaturedProjects = () => {
               width: 100,
               height: 50,
               alt: "Hipnode Logo",
+            }}
+            seeDetailButton={<DetailProjectButton href="/" />}
+          />
+        </li>
+        <li className="p-5">
+          <FeaturedProjectv1
+            background="bg-filmpire"
+            projectTitle={
+              <span className="whitespace-nowrap">
+                Filmpire - Movie info
+                <br />
+                <span className="whitespace-nowrap"> Application</span>
+              </span>
+            }
+            technologies={[
+              <Technologies tech1="React" tech2="Material UI" />,
+              <Technologies tech1="Redux Toolkit" tech2="TMDB" />,
+            ]}
+            desktopView={{
+              url: "/filmpireDesktop.svg",
+              width: 100,
+              height: 50,
+              alt: "Filmpire Logo",
+            }}
+            mobileView={{
+              url: "/filmpireMobile.svg",
+              width: 100,
+              height: 50,
+              alt: "Filmpire Logo",
             }}
             seeDetailButton={<DetailProjectButton href="/" />}
           />
