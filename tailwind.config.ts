@@ -24,6 +24,7 @@ module.exports = {
       hipnode: "#FF6934",
       input: "#CCE1FF",
       black: "#192333",
+      filmpire: "#DB202C",
     },
     container: {
       center: true,
