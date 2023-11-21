@@ -73,6 +73,23 @@ const CaseStudies = () => {
               <Image src="/4Dark.svg" width={600} height={250} alt="HipNode" />
             )}
           </li>
+          <li className="flex justify-center hover:opacity-50 cursor-not-allowed">
+            {theme === "light" ? (
+              <Image
+                src="/filmpireCaseStudy.svg"
+                width={600}
+                height={250}
+                alt="HipNode"
+              />
+            ) : (
+              <Image
+                src="/filmpireCaseStudy.svg"
+                width={600}
+                height={250}
+                alt="HipNode"
+              />
+            )}
+          </li>
         </ul>
       </section>
       <GetInTouch />
