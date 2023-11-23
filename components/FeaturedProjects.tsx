@@ -1,6 +1,6 @@
+/* eslint-disable react/jsx-key */
 "use client";
 
-/* eslint-disable react/jsx-key */
 import Image from "next/image";
 
 import {
@@ -11,6 +11,7 @@ import {
 } from ".";
 import Link from "next/link";
 import { useTheme } from "@/context/theme-context";
+import FeaturedProjectv2 from "./FeaturedProjectv2";
 
 const FeaturedProjects = () => {
   const { theme } = useTheme();
@@ -64,23 +65,22 @@ const FeaturedProjects = () => {
               height: 50,
               alt: "Morent Logo",
             }}
-            seeDetailButton={
-              <DetailProjectButton href="/casestudies/morrent" />
-            }
+            seeDetailButton={<DetailProjectButton href="/morrent" />}
           />
         </li>
         <li className="p-5">
-          <FeaturedProjectv1
-            background="bg-hipnode"
+          <FeaturedProjectv2
+            background="bg-[#ECEFF1]"
             projectTitle={
               <span className="whitespace-nowrap">
-                Hipnode - A Social <br />
-                <span className="whitespace-nowrap">Media Application</span>
+                Promptopia - AI
+                <br />
+                <span className="whitespace-nowrap">Prompt sharing app</span>
               </span>
             }
             technologies={[
-              <Technologies tech1="ReactJS" tech2="Vite" />,
-              <Technologies tech1="Express.js" tech2="MySQL" />,
+              <Technologies tech1="NextJS" tech2="API" />,
+              <Technologies tech1="Tailwind" tech2="Mongodb" />,
             ]}
             desktopView={{
               url: "/hipnodeLaptop.svg",
@@ -89,12 +89,14 @@ const FeaturedProjects = () => {
               alt: "Hipnode Logo",
             }}
             mobileView={{
-              url: "/hipnodeMobile.svg",
-              width: 100,
+              url: "/mobilePrompt.png",
+              width: 200,
               height: 50,
               alt: "Hipnode Logo",
             }}
-            seeDetailButton={<DetailProjectButton href="/" />}
+            seeDetailButton={
+              <DetailProjectButton href="https://prompts-dwhtel5ex-mlguels.vercel.app/" />
+            }
           />
         </li>
         <li className="p-5">
@@ -123,7 +125,9 @@ const FeaturedProjects = () => {
               height: 50,
               alt: "Filmpire Logo",
             }}
-            seeDetailButton={<DetailProjectButton href="/" />}
+            seeDetailButton={
+              <DetailProjectButton href="https://fascinating-profiterole-70c2ad.netlify.app/" />
+            }
           />
         </li>
         <li>

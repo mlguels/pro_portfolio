@@ -46,7 +46,7 @@ const CaseStudies = () => {
       <section className="p-10 m-10 ">
         <ul className="grid md:grid-cols-2 justify-center gap-4 md:mx-52">
           <li className="flex justify-center hover:opacity-50 cursor-pointer">
-            <Link href="/casestudies/morrent">
+            <Link href="/morrent">
               {theme === "light" ? (
                 <Image src="/1.svg" width={600} height={250} alt="Morrent" />
               ) : (

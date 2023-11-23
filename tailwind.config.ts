@@ -25,6 +25,7 @@ module.exports = {
       input: "#CCE1FF",
       black: "#192333",
       filmpire: "#DB202C",
+      promptopia: "#FFC700",
     },
     container: {
       center: true,
