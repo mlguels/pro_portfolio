@@ -2,16 +2,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   FeaturedProjectv1,
   Technologies,
   DetailProjectButton,
   ButtonLink,
+  FeaturedProjectsv2,
 } from ".";
-import Link from "next/link";
+
 import { useTheme } from "@/context/theme-context";
-import FeaturedProjectv2 from "./FeaturedProjectv2";
 
 const FeaturedProjects = () => {
   const { theme } = useTheme();
@@ -69,8 +70,8 @@ const FeaturedProjects = () => {
           />
         </li>
         <li className="p-5">
-          <FeaturedProjectv2
-            background="bg-[#ECEFF1]"
+          <FeaturedProjectsv2
+            background="bg-[#A9CCE3]"
             projectTitle={
               <span className="whitespace-nowrap">
                 Promptopia - AI
