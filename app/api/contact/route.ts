@@ -1,4 +1,9 @@
-export default async function handler(req: { method: string; body: any }) {
+import { NextApiRequest, NextApiResponse } from "next";
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method === "POST") {
     try {
       const response = await fetch("https://formspree.io/f/xjvqjvqd", {
