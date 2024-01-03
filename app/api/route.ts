@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
-) {
+): Promise<any> {
   if (req.method === "POST") {
     try {
       const response = await fetch("https://formspree.io/f/xjvqjvqd", {
