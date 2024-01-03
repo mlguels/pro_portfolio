@@ -1,15 +1,4 @@
-export default async function handler(
-  req: { method: string; body: any },
-  res: {
-    json: (arg0: any) => void;
-    status: (arg0: number) => {
-      (): any;
-      new (): any;
-      json: { (arg0: { message: string }): void; new (): any };
-      end: { (): void; new (): any };
-    };
-  }
-) {
+export default async function handler(req: { method: string; body: any }) {
   if (req.method === "POST") {
     try {
       const response = await fetch("https://formspree.io/f/xjvqjvqd", {
