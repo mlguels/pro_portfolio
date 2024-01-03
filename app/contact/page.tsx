@@ -142,7 +142,7 @@ const Contact = () => {
                 Subject
               </label>
               <input
-                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] focus:text-main-bg"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] dark:focus:text-main-bg dark:text-main-bg"
                 name="subject"
                 id="subject"
               />
@@ -163,7 +163,7 @@ const Contact = () => {
                 rows={5}
                 id="message"
                 name="message"
-                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] focus:text-main-bg"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] dark:focus:text-main-bg dark:text-main-bg"
               />
               <ValidationError
                 prefix="message"
@@ -179,7 +179,7 @@ const Contact = () => {
                 </span>
               </label>
               <input
-                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] focus:text-main-bg"
+                className="bg-[#F3F8FF] dark:bg-[#192333] rounded-lg p-2 border border-[#CCE1FF] dark:border-[#2C3C56] dark:focus:text-main-bg dark:text-main-bg"
                 id="info"
                 name="info"
               />
