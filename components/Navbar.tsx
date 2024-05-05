@@ -41,10 +41,10 @@ const Nav = () => {
                 </li>
               </Link>
               <li className="flex items-center text-black-200 font-200 transition hover:opacity-50 dark:text-main-bg cursor-pointer pb-1">
-                <a href="/Resume.pdf" download="miguel-rodriguez.pdf">
+                <a href="/Resume.pdf" download="miguelrodriguez.pdf">
                   <DownloadResume />
                 </a>
-                <a href="/Resume.pdf" download="miguel-rodriguez.pdf">
+                <a href="/Resume.pdf" download="miguelrodriguez.pdf">
                   <span>Resume</span>
                 </a>
               </li>
